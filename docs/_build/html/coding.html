@@ -28,6 +28,7 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Machine Learning" href="ml.html" />
     <link rel="prev" title="Welcome to Computational Materials Science Resources" href="index.html" /> 
 
   
@@ -89,7 +90,11 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#editors-ides">Editors/IDEs</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#vim">VIM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vim">VIM</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#configuration">Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#commands-i-tend-to-forget">Commands I tend to forget</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="#pycharm">PyCharm</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#sublime">Sublime</a></li>
 </ul>
@@ -97,6 +102,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#development-process">Development process</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="ml.html">Machine Learning</a></li>
 </ul>
 
             
@@ -174,7 +180,8 @@
 <div class="section" id="id1">
 <h3>Online<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><a class="reference external" href="http://www.buildyourownlisp.com/">Build your own lisp</a>.</li>
+<li><a class="reference external" href="http://www.buildyourownlisp.com/">Build your own lisp</a> is a nice way to get
+started with C and learn about lisps</li>
 </ul>
 </div>
 </div>
@@ -183,7 +190,54 @@
 <div class="section" id="vim">
 <h3>VIM<a class="headerlink" href="#vim" title="Permalink to this headline">¶</a></h3>
 <p>Vim is a really powerful editor, but you need to spend some time learning and
-configuring it. Some useful settings for the <code class="code docutils literal"><span class="pre">.vimrc</span></code> file are:</p>
+configuring it.</p>
+<div class="section" id="configuration">
+<h4>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h4>
+<p>Some useful settings for the <code class="code docutils literal"><span class="pre">.vimrc</span></code> file are:
+* <code class="code docutils literal"><span class="pre">syntax</span> <span class="pre">enable</span></code> is probably self-explanatory
+* search</p>
+<blockquote>
+<div><div class="highlight-default"><div class="highlight"><pre><span></span><span class="nb">set</span> <span class="n">incsearch</span>           <span class="s2">&quot; lookahead search</span>
+<span class="nb">set</span> <span class="n">ignorecase</span>          <span class="s2">&quot; in most cases I want to be case-insenstivie</span>
+<span class="nb">set</span> <span class="n">smartcase</span>           <span class="s2">&quot; unless i explicitely use uppercase</span>
+<span class="nb">set</span> <span class="n">hlsearch</span>            <span class="s2">&quot; highlight matches</span>
+</pre></div>
+</div>
+</div></blockquote>
+<ul>
+<li><p class="first">identations</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="nb">set</span> <span class="n">tabstop</span><span class="o">=</span><span class="mi">4</span>           <span class="s2">&quot; number of spaces per &lt;TAB&gt;</span>
+<span class="nb">set</span> <span class="n">expandtab</span>           <span class="s2">&quot; convert &lt;TAB&gt; key-presses to spaces in insert mode</span>
+<span class="nb">set</span> <span class="n">shiftwidth</span><span class="o">=</span><span class="mi">4</span>        <span class="s2">&quot; set a &lt;TAB&gt; key-press equal to 4 spaces</span>
+
+<span class="nb">set</span> <span class="n">autoindent</span>          <span class="s2">&quot; copy indent from current line when starting a new line</span>
+<span class="nb">set</span> <span class="n">smartindent</span>         <span class="s2">&quot; even better autoindent (&#39;smart&#39; insert after e.g. {)</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Persistent undo</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>if has(&#39;persistent_undo&#39;)
+  &quot; Save all undo files in a single location (less messy, more risky)...
+  set undodir=$HOME/.VIM_UNDO_FILES
+
+  &quot; Save a lot of back-history...
+  set undolevels=5000
+
+  &quot; Actually switch on persistent undo
+  set undofile
+
+endif
+</pre></div>
+</div>
+</li>
+</ul>
+<p>If you want to see a really crazy setup, check out
+<a class="reference external" href="https://github.com/thoughtstream/Damian-Conway-s-Vim-Setup">Damian Conway’s vim setup</a>.
+There you can also find how to create the <a class="reference external" href="https://github.com/thoughtstream/Damian-Conway-s-Vim-Setup/blob/master/plugin/SWTC.vim">Star Wars intro in vim</a>.</p>
+</div>
+<div class="section" id="commands-i-tend-to-forget">
+<h4>Commands I tend to forget<a class="headerlink" href="#commands-i-tend-to-forget" title="Permalink to this headline">¶</a></h4>
+</div>
 </div>
 <div class="section" id="pycharm">
 <h3>PyCharm<a class="headerlink" href="#pycharm" title="Permalink to this headline">¶</a></h3>
@@ -206,6 +260,8 @@ configuring it. Some useful settings for the <code class="code docutils literal"
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ml.html" class="btn btn-neutral float-right" title="Machine Learning" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="index.html" class="btn btn-neutral" title="Welcome to Computational Materials Science Resources" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
