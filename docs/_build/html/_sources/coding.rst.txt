@@ -30,7 +30,7 @@ Configuration
 
 Some useful settings for the :code:`.vimrc` file are:
 
-* :code:`syntax enable` is probably self-explanatory
+* syntax highlighting :code:`syntax enable` is probably self-explanatory
 * search
   :: 
 
@@ -73,8 +73,13 @@ Plugins
 * Schlepp 
 
 
-Commands I tend to forget
-*************************
+Commands 
+*********
+* Use :code:`$` to get to the end of the lines 
+* Use different navigation levels :code:`b`, :code:`w`, :code:`{` and :code:`(`
+* Search/Replace (:code:`g` means global)   
+  * all lines :code:`:%s/foo/bar/g` 
+  * this line :code:`:s/foo/bar/g`
 
 PyCharm
 ```````
@@ -90,6 +95,10 @@ Development process
 -------------------
 Starting a project
 ``````````````````
+The easiest way to start a (python) project is to use a `cookiecutter <https://github.com/audreyr/cookiecutter>`_ 
+that creates the basic project structure and also some configuration files for you. 
+A nice none in the field of molecular simulations is the 
+`cookiecutter for computational molecular sciences python packages <https://github.com/MolSSI/cookiecutter-cms>`_ 
 
 CI/CD
 `````
