@@ -29,6 +29,7 @@ Configuration
 *************
 
 Some useful settings for the :code:`.vimrc` file are:
+
 * :code:`syntax enable` is probably self-explanatory
 * search
   :: 
@@ -67,6 +68,11 @@ If you want to see a really crazy setup, check out
 `Damian Conway's vim setup <https://github.com/thoughtstream/Damian-Conway-s-Vim-Setup>`_. 
 There you can also find how to create the `Star Wars intro in vim <https://github.com/thoughtstream/Damian-Conway-s-Vim-Setup/blob/master/plugin/SWTC.vim>`_. 
 
+Plugins 
+*******
+* Schlepp 
+
+
 Commands I tend to forget
 *************************
 
@@ -82,6 +88,16 @@ Sublime is a lot faster than PyCharm and supports basically all languages.
 
 Development process
 -------------------
+Starting a project
+``````````````````
 
+CI/CD
+`````
+
+Docker 
+******
+
+Pre-Commit 
+``````````
 
 

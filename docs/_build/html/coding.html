@@ -92,6 +92,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#editors-ides">Editors/IDEs</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#vim">VIM</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#configuration">Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#plugins">Plugins</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#commands-i-tend-to-forget">Commands I tend to forget</a></li>
 </ul>
 </li>
@@ -99,7 +100,15 @@
 <li class="toctree-l3"><a class="reference internal" href="#sublime">Sublime</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#development-process">Development process</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#development-process">Development process</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#starting-a-project">Starting a project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ci-cd">CI/CD</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#docker">Docker</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#pre-commit">Pre-Commit</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="ml.html">Machine Learning</a></li>
@@ -193,18 +202,18 @@ started with C and learn about lisps</li>
 configuring it.</p>
 <div class="section" id="configuration">
 <h4>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h4>
-<p>Some useful settings for the <code class="code docutils literal"><span class="pre">.vimrc</span></code> file are:
-* <code class="code docutils literal"><span class="pre">syntax</span> <span class="pre">enable</span></code> is probably self-explanatory
-* search</p>
-<blockquote>
-<div><div class="highlight-default"><div class="highlight"><pre><span></span><span class="nb">set</span> <span class="n">incsearch</span>           <span class="s2">&quot; lookahead search</span>
+<p>Some useful settings for the <code class="code docutils literal"><span class="pre">.vimrc</span></code> file are:</p>
+<ul>
+<li><p class="first"><code class="code docutils literal"><span class="pre">syntax</span> <span class="pre">enable</span></code> is probably self-explanatory</p>
+</li>
+<li><p class="first">search</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="nb">set</span> <span class="n">incsearch</span>           <span class="s2">&quot; lookahead search</span>
 <span class="nb">set</span> <span class="n">ignorecase</span>          <span class="s2">&quot; in most cases I want to be case-insenstivie</span>
 <span class="nb">set</span> <span class="n">smartcase</span>           <span class="s2">&quot; unless i explicitely use uppercase</span>
 <span class="nb">set</span> <span class="n">hlsearch</span>            <span class="s2">&quot; highlight matches</span>
 </pre></div>
 </div>
-</div></blockquote>
-<ul>
+</li>
 <li><p class="first">identations</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="nb">set</span> <span class="n">tabstop</span><span class="o">=</span><span class="mi">4</span>           <span class="s2">&quot; number of spaces per &lt;TAB&gt;</span>
 <span class="nb">set</span> <span class="n">expandtab</span>           <span class="s2">&quot; convert &lt;TAB&gt; key-presses to spaces in insert mode</span>
@@ -235,6 +244,12 @@ endif
 <a class="reference external" href="https://github.com/thoughtstream/Damian-Conway-s-Vim-Setup">Damian Conway’s vim setup</a>.
 There you can also find how to create the <a class="reference external" href="https://github.com/thoughtstream/Damian-Conway-s-Vim-Setup/blob/master/plugin/SWTC.vim">Star Wars intro in vim</a>.</p>
 </div>
+<div class="section" id="plugins">
+<h4>Plugins<a class="headerlink" href="#plugins" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>Schlepp</li>
+</ul>
+</div>
 <div class="section" id="commands-i-tend-to-forget">
 <h4>Commands I tend to forget<a class="headerlink" href="#commands-i-tend-to-forget" title="Permalink to this headline">¶</a></h4>
 </div>
@@ -250,6 +265,18 @@ There you can also find how to create the <a class="reference external" href="ht
 </div>
 <div class="section" id="development-process">
 <h2>Development process<a class="headerlink" href="#development-process" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="starting-a-project">
+<h3>Starting a project<a class="headerlink" href="#starting-a-project" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="ci-cd">
+<h3>CI/CD<a class="headerlink" href="#ci-cd" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="docker">
+<h4>Docker<a class="headerlink" href="#docker" title="Permalink to this headline">¶</a></h4>
+</div>
+</div>
+<div class="section" id="pre-commit">
+<h3>Pre-Commit<a class="headerlink" href="#pre-commit" title="Permalink to this headline">¶</a></h3>
+</div>
 </div>
 </div>
 
