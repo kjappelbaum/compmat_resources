@@ -9,7 +9,8 @@ Welcome to Computational Materials Science Resources's documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-
+    
+   coding 
 
 
 Indices and tables
