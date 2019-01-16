@@ -1,11 +1,11 @@
 =================
-Coding resources
+Coding 
 =================
 
 General 
 -------
 * Software developers who train for interviews use `Hackerrank <https://www.hackerrank.com/interview/interview-preparation-kit>`_ but it has nice problems if you just want to improve your computational thinking and coding skills in general
-* 
+* The `Common-Sense Guide to Data Structures and Algorithms: Level Up Your Core Programming Skills <https://pragprog.com/book/jwdsal/a-common-sense-guide-to-data-structures-and-algorithms>`_, written by Jay Wengrow, is a fast and easy read to get an introductions to datastructures, time complexity and some important sorting and searching algorithms  
 
 Python
 -------
