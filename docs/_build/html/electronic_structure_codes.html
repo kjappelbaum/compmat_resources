@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Search &mdash; Computational Materials Science Resources  documentation</title>
+  <title>Electronic Structure Codes &mdash; Computational Materials Science Resources  documentation</title>
   
 
   
@@ -27,7 +27,7 @@
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="#" /> 
+    <link rel="search" title="Search" href="search.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -59,7 +59,7 @@
 
           
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="#" method="get">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -80,10 +80,6 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="coding.html">Coding resources</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ml.html">Machine Learning</a></li>
-<li class="toctree-l1"><a class="reference internal" href="math.html">Linear Algebra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="math.html#statistics">Statistics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="electronic_structure_codes.html">Electronic Structure Codes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dft.html">QM and DFT theoretical background</a></li>
 </ul>
 
             
@@ -129,12 +125,14 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Search</li>
+      <li>Electronic Structure Codes</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
+            <a href="_sources/electronic_structure_codes.rst.txt" rel="nofollow"> View page source</a>
+          
         
       </li>
     
@@ -146,19 +144,30 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <noscript>
-  <div id="fallback" class="admonition warning">
-    <p class="last">
-      Please activate JavaScript to enable the search
-      functionality.
-    </p>
-  </div>
-  </noscript>
+  <div class="section" id="electronic-structure-codes">
+<h1>Electronic Structure Codes<a class="headerlink" href="#electronic-structure-codes" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="vasp">
+<h2>VASP<a class="headerlink" href="#vasp" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="creating-input-files">
+<h3>Creating input files<a class="headerlink" href="#creating-input-files" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="http://pymatgen.org/_modules/pymatgen/io/vasp/sets.html">Pymatgen relax sets</a> are really useful as they also come with e.g. useful <a class="reference external" href="https://github.com/materialsproject/pymatgen/blob/master/pymatgen/io/vasp/VASPIncarBase.yaml">MAGMON settings</a></li>
+</ul>
+</div>
+<div class="section" id="common-problems">
+<h3>Common problems<a class="headerlink" href="#common-problems" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>In my opinion, VASP is pretty silent when stopping a run altough not reaching</li>
+</ul>
+<p>the convergence criteria. Double checking the forces is essential here.
+* To avoid stack size errors, you might find it useful to set</p>
+<blockquote>
+<div>ulimit -s unlimited</div></blockquote>
+<p>in your <code class="code docutils literal"><span class="pre">.bashrc</span></code></p>
+</div>
+</div>
+</div>
 
-  
-  <div id="search-results">
-  
-  </div>
 
            </div>
            
@@ -206,7 +215,6 @@
         <script type="text/javascript" src="_static/underscore.js"></script>
         <script type="text/javascript" src="_static/doctools.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script type="text/javascript" src="_static/searchtools.js"></script>
     
 
   
@@ -217,14 +225,7 @@
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-  <script type="text/javascript">
-    jQuery(function() { Search.loadIndex("searchindex.js"); });
-  </script>
-  
-  <script type="text/javascript" id="searchindexloader"></script>
-   
-
+  </script> 
 
 </body>
 </html>

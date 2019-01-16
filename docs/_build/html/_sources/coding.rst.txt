@@ -2,6 +2,11 @@
 Coding resources
 =================
 
+General 
+-------
+* Software developers who train for interviews use `Hackerrank <https://www.hackerrank.com/interview/interview-preparation-kit>`_ but it has nice problems if you just want to improve your computational thinking and coding skills in general
+* 
+
 Python
 -------
 

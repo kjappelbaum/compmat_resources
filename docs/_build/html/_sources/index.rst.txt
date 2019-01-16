@@ -19,4 +19,7 @@ main intent for writing this is having a place where I can keep track of useful 
     
    coding 
    ml
+   math
+   electronic_structure_codes
+   dft
 
