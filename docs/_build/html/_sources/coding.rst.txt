@@ -63,23 +63,41 @@ Some useful settings for the :code:`.vimrc` file are:
          set undofile
 
        endif
-  
+
+* I am paranoid, I want to lose at max 10 keystrokes
+  ::
+
+     set updatecount=10
+
+* If you do not want to type all the search replace syntax (vide infra) remap it 
+  ::
+     
+     nmap  S  :%s//g<LEFT><LEFT>
+
+  now you need to type only 
+  ::
+     
+     SX/Y<CR>
+
+  for global search/replace on all lines.
+
+
 If you want to see a really crazy setup, check out 
 `Damian Conway's vim setup <https://github.com/thoughtstream/Damian-Conway-s-Vim-Setup>`_. 
 There you can also find how to create the `Star Wars intro in vim <https://github.com/thoughtstream/Damian-Conway-s-Vim-Setup/blob/master/plugin/SWTC.vim>`_. 
 
 Plugins 
 *******
-* Schlepp 
-
+* `schelpp <https://github.com/zirrostig/vim-schlepp>`_: makes it easier to move stuff in visual block
+* `fatfinger <https://github.com/chip/vim-fat-finger>`_: corrects common misspellings
 
 Commands 
 *********
 * Use :code:`$` to get to the end of the lines 
 * Use different navigation levels :code:`b`, :code:`w`, :code:`{` and :code:`(`
 * Search/Replace (:code:`g` means global)   
-  * all lines :code:`:%s/foo/bar/g` 
-  * this line :code:`:s/foo/bar/g`
+  - all lines :code:`:%s/foo/bar/g` 
+  - this line :code:`:s/foo/bar/g`
 
 PyCharm
 ```````
@@ -109,4 +127,7 @@ Docker
 Pre-Commit 
 ``````````
 
+Documentation 
+`````````````
+* `ReStructured Text Quickreference <http://docutils.sourceforge.net/docs/user/rst/quickref.html>`_: useful when writing sphinx docs
 

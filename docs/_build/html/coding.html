@@ -107,6 +107,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#pre-commit">Pre-Commit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#documentation">Documentation</a></li>
 </ul>
 </li>
 </ul>
@@ -239,6 +240,21 @@ endif
 </pre></div>
 </div>
 </li>
+<li><p class="first">I am paranoid, I want to lose at max 10 keystrokes</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="nb">set</span> <span class="n">updatecount</span><span class="o">=</span><span class="mi">10</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">If you do not want to type all the search replace syntax (vide infra) remap it</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">nmap</span>  <span class="n">S</span>  <span class="p">:</span><span class="o">%</span><span class="n">s</span><span class="o">//</span><span class="n">g</span><span class="o">&lt;</span><span class="n">LEFT</span><span class="o">&gt;&lt;</span><span class="n">LEFT</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>now you need to type only</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">SX</span><span class="o">/</span><span class="n">Y</span><span class="o">&lt;</span><span class="n">CR</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>for global search/replace on all lines.</p>
+</li>
 </ul>
 <p>If you want to see a really crazy setup, check out
 <a class="reference external" href="https://github.com/thoughtstream/Damian-Conway-s-Vim-Setup">Damian Conway’s vim setup</a>.
@@ -247,7 +263,8 @@ There you can also find how to create the <a class="reference external" href="ht
 <div class="section" id="plugins">
 <h4>Plugins<a class="headerlink" href="#plugins" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
-<li>Schlepp</li>
+<li><a class="reference external" href="https://github.com/zirrostig/vim-schlepp">schelpp</a>: makes it easier to move stuff in visual block</li>
+<li><a class="reference external" href="https://github.com/chip/vim-fat-finger">fatfinger</a>: corrects common misspellings</li>
 </ul>
 </div>
 <div class="section" id="commands">
@@ -256,8 +273,8 @@ There you can also find how to create the <a class="reference external" href="ht
 <li>Use <code class="code docutils literal"><span class="pre">$</span></code> to get to the end of the lines</li>
 <li>Use different navigation levels <code class="code docutils literal"><span class="pre">b</span></code>, <code class="code docutils literal"><span class="pre">w</span></code>, <code class="code docutils literal"><span class="pre">{</span></code> and <code class="code docutils literal"><span class="pre">(</span></code></li>
 <li>Search/Replace (<code class="code docutils literal"><span class="pre">g</span></code> means global)
-* all lines <code class="code docutils literal"><span class="pre">:%s/foo/bar/g</span></code>
-* this line <code class="code docutils literal"><span class="pre">:s/foo/bar/g</span></code></li>
+- all lines <code class="code docutils literal"><span class="pre">:%s/foo/bar/g</span></code>
+- this line <code class="code docutils literal"><span class="pre">:s/foo/bar/g</span></code></li>
 </ul>
 </div>
 </div>
@@ -287,6 +304,12 @@ A nice none in the field of molecular simulations is the
 </div>
 <div class="section" id="pre-commit">
 <h3>Pre-Commit<a class="headerlink" href="#pre-commit" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="documentation">
+<h3>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="http://docutils.sourceforge.net/docs/user/rst/quickref.html">ReStructured Text Quickreference</a>: useful when writing sphinx docs</li>
+</ul>
 </div>
 </div>
 </div>
