@@ -27,7 +27,9 @@
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="QM and DFT theoretical background" href="dft.html" />
+    <link rel="prev" title="Math" href="math.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -77,9 +79,19 @@
             
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="coding.html">Coding resources</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ml.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="math.html">Math</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Electronic Structure Codes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#vasp">VASP</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#creating-input-files">Creating input files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#common-problems">Common problems</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="dft.html">QM and DFT theoretical background</a></li>
 </ul>
 
             
@@ -157,12 +169,18 @@
 <div class="section" id="common-problems">
 <h3>Common problems<a class="headerlink" href="#common-problems" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li>In my opinion, VASP is pretty silent when stopping a run altough not reaching</li>
+<li>In my opinion, VASP is pretty silent when stopping a run altough not reaching
+the convergence criteria. Double checking the forces is essential here.</li>
+<li><dl class="first docutils">
+<dt>To avoid stack size errors, you might find it useful to set</dt>
+<dd><dl class="first last docutils">
+<dt>::</dt>
+<dd>ulimit -s unlimited</dd>
+</dl>
+</dd>
+</dl>
+</li>
 </ul>
-<p>the convergence criteria. Double checking the forces is essential here.
-* To avoid stack size errors, you might find it useful to set</p>
-<blockquote>
-<div>ulimit -s unlimited</div></blockquote>
 <p>in your <code class="code docutils literal"><span class="pre">.bashrc</span></code></p>
 </div>
 </div>
@@ -173,6 +191,15 @@
            
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="dft.html" class="btn btn-neutral float-right" title="QM and DFT theoretical background" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="math.html" class="btn btn-neutral" title="Math" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
