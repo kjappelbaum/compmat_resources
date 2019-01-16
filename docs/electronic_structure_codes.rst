@@ -16,7 +16,7 @@ the convergence criteria. Double checking the forces is essential here.
 * To avoid stack size errors, you might find it useful to set 
 	::
 
-	ulimit -s unlimited
+	     ulimit -s unlimited
 
 in your :code:`.bashrc` 
 
