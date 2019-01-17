@@ -80,13 +80,21 @@
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="coding.html">Coding resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="coding.html">Coding</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ml.html">Machine Learning</a></li>
 <li class="toctree-l1"><a class="reference internal" href="math.html">Math</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Electronic Structure Codes</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#vasp">VASP</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#creating-input-files">Creating input files</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#common-problems">Common problems</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#cp2k">cp2k</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Creating input files</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#quantum-espresso">Quantum Espresso</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Creating input files</a></li>
 </ul>
 </li>
 </ul>
@@ -168,20 +176,41 @@
 </div>
 <div class="section" id="common-problems">
 <h3>Common problems<a class="headerlink" href="#common-problems" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li>In my opinion, VASP is pretty silent when stopping a run altough not reaching
-the convergence criteria. Double checking the forces is essential here.</li>
+<ul>
+<li><p class="first">In my opinion, VASP is pretty silent when stopping a run altough not reaching
+the convergence criteria. Double checking the forces is essential here.</p>
+</li>
 <li><dl class="first docutils">
 <dt>To avoid stack size errors, you might find it useful to set</dt>
-<dd><dl class="first last docutils">
-<dt>::</dt>
-<dd>ulimit -s unlimited</dd>
-</dl>
+<dd><div class="first last highlight-default"><div class="highlight"><pre><span></span><span class="n">ulimit</span> <span class="o">-</span><span class="n">s</span> <span class="n">unlimited</span>
+</pre></div>
+</div>
 </dd>
 </dl>
 </li>
 </ul>
 <p>in your <code class="code docutils literal"><span class="pre">.bashrc</span></code></p>
+</div>
+</div>
+<div class="section" id="cp2k">
+<h2>cp2k<a class="headerlink" href="#cp2k" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>Creating input files<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/SINGROUP/pycp2k">pycp2k</a> makes it maybe a bit more easy to create input files</li>
+</ul>
+</div>
+</div>
+<div class="section" id="quantum-espresso">
+<h2>Quantum Espresso<a class="headerlink" href="#quantum-espresso" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id2">
+<h3>Creating input files<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>There are some interesting developments coming from the ASE community, particularly interesting are the developments
+from <a class="reference external" href="https://github.com/vossjo/ase-espresso">Johannes Voss</a>
+that allow one to use the ASE optimizers and also initialize finite-difference phonon calculations
+with the potential of a previous (undisplaced) calculation</li>
+</ul>
 </div>
 </div>
 </div>
