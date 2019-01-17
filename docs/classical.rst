@@ -13,7 +13,7 @@ Online Resources
 * `Scott Shell's lecture notes <https://engineering.ucsb.edu/~shell/che210d/>`_ are really instructive
 * The living journal of computational molecular science has nice texts on `MD basics <https://www.livecomsjournal.org/article/5957-best-practices-for-foundations-in-molecular-simulations-article-v1-0>`_
   (with really good references) and on `uncertainty <https://www.livecomsjournal.org/article/5067-best-practices-for-quantification-of-uncertainty-and-sampling-quality-in-molecular-simulations-article-v1-0>`_
-
+* Slides and exercises from the `Molsim workshop <http://www.acmm.nl/molsim/molsim2019/>`_
 
 Books
 `````
