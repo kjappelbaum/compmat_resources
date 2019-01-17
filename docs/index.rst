@@ -22,4 +22,6 @@ main intent for writing this is having a place where I can keep track of useful 
    math
    electronic_structure_codes
    dft
+   classical
+
 
