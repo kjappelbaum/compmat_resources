@@ -129,7 +129,8 @@ CI/CD
 
 Docker 
 ******
-
+On HPC environments, where you don't have root rights, `singularity <https://www.sylabs.io/docs/>`_ might be a
+way to go. There is also a `image to convert singularity images to docker images <https://github.com/singularityware/docker2singularity>`_
 
 Git(hub)
 ********

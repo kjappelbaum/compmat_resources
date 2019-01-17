@@ -33,5 +33,7 @@ Python Packages
 * `QML <http://www.qmlcode.org/>`_ has a similar goal. It has efficient implementations to calculate representations
   and kernels
 * `matminer <https://github.com/hackingmaterials/matminer>`_ is really useful to compute common descriptors
+* `Edward <http://edwardlib.org/>`_ is a nice package for probabilistic modelling like bayesian neural nets.
+* `PyMC3 <https://docs.pymc.io/>`_ is a popular package for probabilistic programming
 
 
