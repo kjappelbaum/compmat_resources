@@ -83,6 +83,11 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Coding</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#general">General</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#python">Python</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#jupyter-notebooks-on-hpc-environments">Jupyter notebooks on HPC environments</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#using-configuration-file">Using configuration file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#using-tunneling">Using tunneling</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="#online">Online</a></li>
 </ul>
 </li>
@@ -194,6 +199,49 @@
 </div>
 <div class="section" id="python">
 <h2>Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="jupyter-notebooks-on-hpc-environments">
+<h3>Jupyter notebooks on HPC environments<a class="headerlink" href="#jupyter-notebooks-on-hpc-environments" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="using-configuration-file">
+<h4>Using configuration file<a class="headerlink" href="#using-configuration-file" title="Permalink to this headline">¶</a></h4>
+<p>In some cases it can be useful to, instead of running the ipython kernel on the headnode, to just submit it
+to computing node of cluster and then access the kernel from the browser (either from the headnode or your local machine).</p>
+<p>You can achieve this by setting some things in your <code class="code docutils literal"><span class="pre">~/.jupyter/jupyter_notebook_config.py</span></code> file you can
+create this file using <code class="code docutils literal"><span class="pre">jupyter</span> <span class="pre">notebook</span> <span class="pre">--generate-config</span></code>.</p>
+<p>In this file you then can modify the following:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">c</span><span class="o">.</span><span class="n">NotebookApp</span><span class="o">.</span><span class="n">ip</span> <span class="o">=</span> <span class="s1">&#39;*&#39;</span>
+<span class="n">c</span><span class="o">.</span><span class="n">NotebookApp</span><span class="o">.</span><span class="n">open_browser</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">c</span><span class="o">.</span><span class="n">NotebookApp</span><span class="o">.</span><span class="n">port</span> <span class="o">=</span> <span class="n">XXXXX</span>
+</pre></div>
+</div>
+<p>Where <code class="code docutils literal"><span class="pre">XXXX</span></code> is a number greater than 8888. You might also want to set a password instead of a token
+(you can do this in the config file or by running <code class="code docutils literal"><span class="pre">jupyter-notebook</span> <span class="pre">password</span></code>).
+In your submission script you can then add <code class="code docutils literal"><span class="pre">hostname</span></code> to print the hostname which you can then use to access
+the notebook at <code class="code docutils literal"><span class="pre">hostname:XXXXX</span></code>. In some cases you might also want to hardcode  <code class="code docutils literal"><span class="pre">c.NotebookApp.ip</span></code> to
+the ip of a particular compute node and then simply bookmark this address.</p>
+</div>
+<div class="section" id="using-tunneling">
+<h4>Using tunneling<a class="headerlink" href="#using-tunneling" title="Permalink to this headline">¶</a></h4>
+<p>Add the following lines to your submission script</p>
+<dl class="docutils">
+<dt>::</dt>
+<dd><p class="first">unset XDG_RUNTIME_DIR
+NODEIP=$(hostname -i)
+NODEPORT=$(( shuf -i 8888-9999 -n 1))
+echo $NODEIP:$NODEPORT</p>
+<p class="last">jupyter-notebook –ip=$NODEIP –port=$NODEPORT –no-browser</p>
+</dd>
+</dl>
+<p><code class="code docutils literal"><span class="pre">shuf</span> <span class="pre">-i</span> <span class="pre">8888-9999</span> <span class="pre">-n</span> <span class="pre">1</span></code> is just to get a random port (binding to 0 and letting the OS is chose is better
+practice, but this here is easier). You can then look into the output file which your
+scheduler produced as it should contain <code class="code docutils literal"><span class="pre">NODEIP</span></code> and <code class="code docutils literal"><span class="pre">NODEPORT</span></code> which you can then use to
+establish a tunnel connection from your local machine using</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>ssh -N -L 8888:$NODEIP:$NODEPORT &lt;username&gt;@&lt;machinename&gt;
+</pre></div>
+</div>
+<p>on your local machine you can now access the jupyter server at <code class="code docutils literal"><span class="pre">http://localhost:8888</span></code>.</p>
+<p>Note that in both approaches the kernel will of course die after the walltime is exceeded.</p>
+</div>
+</div>
 <div class="section" id="online">
 <h3>Online<a class="headerlink" href="#online" title="Permalink to this headline">¶</a></h3>
 </div>

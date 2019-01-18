@@ -10,6 +10,58 @@ General
 Python
 -------
 
+Jupyter notebooks on HPC environments
+`````````````````````````````````````
+
+Using configuration file
+*************************
+
+In some cases it can be useful to, instead of running the ipython kernel on the headnode, to just submit it
+to computing node of cluster and then access the kernel from the browser (either from the headnode or your local machine).
+
+You can achieve this by setting some things in your :code:`~/.jupyter/jupyter_notebook_config.py` file you can
+create this file using :code:`jupyter notebook --generate-config`.
+
+In this file you then can modify the following:
+
+::
+
+    c.NotebookApp.ip = '*'
+    c.NotebookApp.open_browser = False
+    c.NotebookApp.port = XXXXX
+
+Where :code:`XXXX` is a number greater than 8888. You might also want to set a password instead of a token
+(you can do this in the config file or by running :code:`jupyter-notebook password`).
+In your submission script you can then add :code:`hostname` to print the hostname which you can then use to access
+the notebook at :code:`hostname:XXXXX`. In some cases you might also want to hardcode  :code:`c.NotebookApp.ip` to
+the ip of a particular compute node and then simply bookmark this address.
+
+
+Using tunneling
+***************
+Add the following lines to your submission script
+
+::
+    unset XDG_RUNTIME_DIR
+    NODEIP=$(hostname -i)
+    NODEPORT=$(( shuf -i 8888-9999 -n 1))
+    echo $NODEIP:$NODEPORT
+
+    jupyter-notebook --ip=$NODEIP --port=$NODEPORT --no-browser
+
+:code:`shuf -i 8888-9999 -n 1` is just to get a random port (binding to 0 and letting the OS is chose is better
+practice, but this here is easier). You can then look into the output file which your
+scheduler produced as it should contain :code:`NODEIP` and :code:`NODEPORT` which you can then use to
+establish a tunnel connection from your local machine using
+
+::
+
+    ssh -N -L 8888:$NODEIP:$NODEPORT <username>@<machinename>
+
+on your local machine you can now access the jupyter server at :code:`http://localhost:8888`.
+
+Note that in both approaches the kernel will of course die after the walltime is exceeded.
+
 Online
 ``````
 
