@@ -65,6 +65,14 @@ Note that in both approaches the kernel will of course die after the walltime is
 
 Online
 ``````
+* Valuable and fun are always the `talks by Raymond Hettinger <https://www.youtube.com/playlist?list=PLRVdut2KPAguz3xcd22i_o_onnmDKj3MA>`_
+* Great infoŕmation is in `The Hitchhiker's Guide to Python <https://docs.python-guide.org/>`_
+* `Bernd Klein <https://www.python-course.eu/python3_course.php>`_ has also good information on advanced topics such as metaclasses
+  or memoization with decorators
+
+Faster Python
+`````````````
+* Consider trying `PyPY <http://pypy.org/features.html>`_ instead of CPython (check the `benchmarks <http://speed.pypy.org/>`_).
 
 C
 --
@@ -148,6 +156,10 @@ Plugins
 *******
 * `schelpp <https://github.com/zirrostig/vim-schlepp>`_: makes it easier to move stuff in visual block
 * `fatfinger <https://github.com/chip/vim-fat-finger>`_: corrects common misspellings
+* `python syntax highlighting <https://www.vim.org/scripts/script.php?script_id=790>`_
+* `flake8 <https://github.com/nvie/vim-flake8>`_ for PEP8 style and error checking
+* if you are used to :code:`<TAB>` completion, you might like `supertab <https://www.vim.org/scripts/script.php?script_id=1643>`_
+
 
 Commands 
 *********
