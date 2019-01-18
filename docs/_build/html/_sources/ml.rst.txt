@@ -11,7 +11,8 @@ Online Courses
 
 Articles
 --------
-
+* `Model Evaluation, Model Selection, and Algorithm Selection in Machine Learning <https://arxiv.org/abs/1811.12808>`_
+  focusses on classification problems but still is a great resource of how to perform performance evaluations.
 
 Books
 -----

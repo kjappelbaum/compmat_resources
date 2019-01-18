@@ -45,7 +45,7 @@ Add the following lines to your submission script (in this case setting a passwo
 
     unset XDG_RUNTIME_DIR
     NODEIP=$(hostname -i)
-    NODEPORT=$(( shuf -i 8888-9999 -n 1))
+    NODEPORT=$(shuf -i 8888-9999 -n 1)
     echo $NODEIP:$NODEPORT
 
     jupyter-notebook --ip=$NODEIP --port=$NODEPORT --no-browser
@@ -59,7 +59,9 @@ establish a tunnel connection from your local machine using
 
     ssh -N -L 8888:$NODEIP:$NODEPORT <username>@<machinename>
 
-on your local machine you can now access the jupyter server at :code:`http://localhost:8888`.
+on your local machine you can now access the jupyter server at :code:`http://localhost:8888`. If you have to use
+windows on your local machine, you can set up tunneling using MobaXTerm. On some schedulers you may want to enable
+direct writing of output files, on the most recent version of PBS Pro, this is possible with :code:`qsub -koed`.
 
 Note that in both approaches the kernel will of course die after the walltime is exceeded.
 
