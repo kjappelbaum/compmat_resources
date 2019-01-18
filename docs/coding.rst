@@ -39,9 +39,10 @@ the ip of a particular compute node and then simply bookmark this address.
 
 Using tunneling
 ***************
-Add the following lines to your submission script
+Add the following lines to your submission script (in this case setting a password is really useful)
 
 ::
+
     unset XDG_RUNTIME_DIR
     NODEIP=$(hostname -i)
     NODEPORT=$(( shuf -i 8888-9999 -n 1))

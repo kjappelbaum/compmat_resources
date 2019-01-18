@@ -221,16 +221,15 @@ the ip of a particular compute node and then simply bookmark this address.</p>
 </div>
 <div class="section" id="using-tunneling">
 <h4>Using tunneling<a class="headerlink" href="#using-tunneling" title="Permalink to this headline">¶</a></h4>
-<p>Add the following lines to your submission script</p>
-<dl class="docutils">
-<dt>::</dt>
-<dd><p class="first">unset XDG_RUNTIME_DIR
+<p>Add the following lines to your submission script (in this case setting a password is really useful)</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>unset XDG_RUNTIME_DIR
 NODEIP=$(hostname -i)
 NODEPORT=$(( shuf -i 8888-9999 -n 1))
-echo $NODEIP:$NODEPORT</p>
-<p class="last">jupyter-notebook –ip=$NODEIP –port=$NODEPORT –no-browser</p>
-</dd>
-</dl>
+echo $NODEIP:$NODEPORT
+
+jupyter-notebook --ip=$NODEIP --port=$NODEPORT --no-browser
+</pre></div>
+</div>
 <p><code class="code docutils literal"><span class="pre">shuf</span> <span class="pre">-i</span> <span class="pre">8888-9999</span> <span class="pre">-n</span> <span class="pre">1</span></code> is just to get a random port (binding to 0 and letting the OS is chose is better
 practice, but this here is easier). You can then look into the output file which your
 scheduler produced as it should contain <code class="code docutils literal"><span class="pre">NODEIP</span></code> and <code class="code docutils literal"><span class="pre">NODEPORT</span></code> which you can then use to
