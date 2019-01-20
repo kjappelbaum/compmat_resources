@@ -2,6 +2,15 @@
 Electronic Structure Codes
 ===============================
 
+
+General
+-------
+* If you want to know something about the :math:`\Delta` value (RMS energy difference between equations of state,
+  as described in `Reproducibility in density functional
+  theory calculations of solids <http://science.sciencemag.org/cgi/rapidpdf/351/6280/aad3000?ijkey=teUZMpwU49vhY&keytype=ref&siteid=sci>`_) you should got to https://molmod.ugent.be/deltacodesdft.
+* There was a similar effort for pseudopotentials. The approach is described in the article `Precision and efficiency in solid-state pseudopotential calculations
+  <https://www.nature.com/articles/s41524-018-0127-2>`_ and the library is accessible in the `MaterialsCloud <https://www.materialscloud.org/discover/sssp/table/efficiency>`_.
+
 VASP
 ----
 
