@@ -12,7 +12,8 @@ Online Courses
 Articles
 --------
 * `Model Evaluation, Model Selection, and Algorithm Selection in Machine Learning <https://arxiv.org/abs/1811.12808>`_
-  focusses on classification problems but still is a great resource of how to perform performance evaluations.
+  focusses on classification problems but still is a great resource of how to perform performance evaluations (regarding multiple testing remember the probability for type-1 error for multiple testing is
+  :math:`1-(1-\alpha)^n`, where :math:`n` is the number of test and :math:`\alpha` the type-1 error rate of the single test).
 
 Books
 -----
