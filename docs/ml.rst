@@ -42,7 +42,7 @@ Various trivia
 
 * An underappreciated measure of centreal tendency is the trimean (:math:`TM`)
 
-	::math 
+	..math:: 
 		
 		TM = \frac{Q_1 + 2Q_1 + Q_3}{4},
 
@@ -51,11 +51,11 @@ Various trivia
 	"An advantage of the trimean as a measure of the center (of a distribution) is that it combines the median's emphasis on center values with the midhinge's attention to the extremes." — Herbert F. Weisberg, Central Tendency and Variability. 
 
 * It is quite useful to keep the following `nomogram <https://commons.wikimedia.org/wiki/File:P-value_nomograph_for_Bayesian_posterior_estimation.jpg>`_ in mind
+	
 	.. image:: fig/P-value_nomograph_for_Bayesian_posterior_estimation.jpg
-	    :width: 200px
+	    :width: 500px
 	    :align: center
-	    :height: 100px
 	    :alt: P value nomogram
 
-  This is directly connected to 
+  	This is directly connected to 
   	"Extraordinary claims require extraordinary evidence" -- Carl Sagan/Laplace
