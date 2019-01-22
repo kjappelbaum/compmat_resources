@@ -164,7 +164,7 @@ Plugins
 * `python syntax highlighting <https://www.vim.org/scripts/script.php?script_id=790>`_
 * `flake8 <https://github.com/nvie/vim-flake8>`_ for PEP8 style and error checking
 * if you are used to :code:`<TAB>` completion, you might like `supertab <https://www.vim.org/scripts/script.php?script_id=1643>`_
-
+* `jedi-vim <https://github.com/davidhalter/jedi-vim>`_ for some nice python autocompletion
 
 Commands 
 *********
