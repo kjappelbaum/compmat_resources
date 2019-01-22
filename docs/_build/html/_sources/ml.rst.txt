@@ -58,6 +58,5 @@ Various trivia
 	    :align: center
 	    :alt: P value nomogram
 
-  	
   This is directly connected to 
   	 	"Extraordinary claims require extraordinary evidence" -- Carl Sagan/Laplace
