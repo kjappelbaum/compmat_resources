@@ -37,6 +37,7 @@ Python Packages
 * `matminer <https://github.com/hackingmaterials/matminer>`_ is really useful to compute common descriptors
 * `Edward <http://edwardlib.org/>`_ is a nice package for probabilistic modelling like bayesian neural nets.
 * `PyMC3 <https://docs.pymc.io/>`_ is a popular package for probabilistic programming
+* `missingno <https://github.com/ResidentMario/missingno>`_ is a nice package for analzying missing data
 
 Various trivia
 ----------------

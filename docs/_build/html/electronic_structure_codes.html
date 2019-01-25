@@ -29,7 +29,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="QM and DFT theoretical background" href="dft.html" />
-    <link rel="prev" title="Math" href="math.html" /> 
+    <link rel="prev" title="Plotting" href="plotting.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -83,6 +83,7 @@
 <li class="toctree-l1"><a class="reference internal" href="coding.html">Coding</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ml.html">Machine Learning</a></li>
 <li class="toctree-l1"><a class="reference internal" href="math.html">Math</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plotting.html">Plotting</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Electronic Structure Codes</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#general">General</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#vasp">VASP</a><ul>
@@ -175,6 +176,9 @@
 as described in <a class="reference external" href="http://science.sciencemag.org/cgi/rapidpdf/351/6280/aad3000?ijkey=teUZMpwU49vhY&amp;keytype=ref&amp;siteid=sci">Reproducibility in density functional
 theory calculations of solids</a>) you should got to <a class="reference external" href="https://molmod.ugent.be/deltacodesdft">https://molmod.ugent.be/deltacodesdft</a>.</li>
 <li>There was a similar effort for pseudopotentials. The approach is described in the article <a class="reference external" href="https://www.nature.com/articles/s41524-018-0127-2">Precision and efficiency in solid-state pseudopotential calculations</a> and the library is accessible in the <a class="reference external" href="https://www.materialscloud.org/discover/sssp/table/efficiency">MaterialsCloud</a>.</li>
+<li>For phonon calculations, there are some nice developments from Johannes Voss:
+* In <a class="reference external" href="https://github.com/vossjo/ase-espresso/wiki">ase-espresso</a> he initializes displaced calculations in the finite difference method with the KS potential of an undisplaced calculation.
+* In <a class="reference external" href="http://orbit.dtu.dk/files/4807182/O1freepaper.pdf">another work</a>, he uses charge densities from the ground state to construct an interatomic potential which is then used to approximate the Hessian</li>
 </ul>
 </div>
 <div class="section" id="vasp">
@@ -237,7 +241,7 @@ with the potential of a previous (undisplaced) calculation</li>
         <a href="dft.html" class="btn btn-neutral float-right" title="QM and DFT theoretical background" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="math.html" class="btn btn-neutral" title="Math" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="plotting.html" class="btn btn-neutral" title="Plotting" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
