@@ -10,6 +10,7 @@ General
      
      *  `tree <http://mama.indstate.edu/users/ice/tree/>`_
      *  and for copying files etc. `midnightcommander <https://midnight-commander.org/>`_
+* `Visualization of latency numbers every progammer should now <https://people.eecs.berkeley.edu/~rcs/research/interactive_latency.html>`_ (why you want to be in L1 Cache, also nice is the `huminized version with SSD random read as a "normal weekend" and L1 Cache as hearbeat <https://gist.github.com/hellerbarde/2843375>`_ )
 
 Python
 -------
