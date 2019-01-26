@@ -11,8 +11,9 @@ General
 * There was a similar effort for pseudopotentials. The approach is described in the article `Precision and efficiency in solid-state pseudopotential calculations
   <https://www.nature.com/articles/s41524-018-0127-2>`_ and the library is accessible in the `MaterialsCloud <https://www.materialscloud.org/discover/sssp/table/efficiency>`_.
 * For phonon calculations, there are some nice developments from Johannes Voss:
+	
 	* In `ase-espresso <https://github.com/vossjo/ase-espresso/wiki>`_ he initializes displaced calculations in the finite difference method with the KS potential of an undisplaced calculation.
-	* In `another work <http://orbit.dtu.dk/files/4807182/O1freepaper.pdf>`_, he uses charge densities from the ground state to construct an interatomic potential which is then used to approximate the Hessian  
+	* In `another work <http://orbit.dtu.dk/files/4807182/O1freepaper.pdf>`_, he uses charge densities from the ground state to construct an interatomic potential which is then used to construct an approximate Hessian which can be useful for quick estimates of e.g. decomposition temperatures (but it fails for temperatures above the maximum phonon energy and it is :math:`\Gamma`-point only)
 
 VASP
 ----
@@ -27,6 +28,7 @@ Common problems
 * In my opinion, VASP is pretty silent when stopping a run altough not reaching 
   the convergence criteria. Double checking the forces is essential here.
 * To avoid stack size errors, you might find it useful to set 
+
      ::
 
           ulimit -s unlimited
