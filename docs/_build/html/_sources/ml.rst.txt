@@ -63,3 +63,9 @@ Various trivia
   	 	"Extraordinary claims require extraordinary evidence" -- Carl Sagan/Laplace
 
 * A nice visualization of the famous `Ioannidis paper <https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.0020124>`_ is this `RShiny app <http://shiny.ieis.tue.nl/PPV/>`_
+* A quite interesting discussion of the variance in the output function is reduced by adding more parameters to a (ensembled) network which then leads to a lower generalization error. They also provide a discussion of a divergence of the error at :math:`N^*` for networks without regularization. Preprint version is on `arXiv:1901.01608v3 <https://export.arxiv.org/pdf/1901.01608>`_
+	
+	.. image fig/generalization_error_parameters.png
+		:width: 500px
+	    :align: center
+	    :alt: Measured generalization error as a function of the number of parameters (arXiv:1901.01608v3)
