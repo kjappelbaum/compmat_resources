@@ -14,6 +14,7 @@ Articles
 * `Model Evaluation, Model Selection, and Algorithm Selection in Machine Learning <https://arxiv.org/abs/1811.12808>`_
   focusses on classification problems but still is a great resource of how to perform performance evaluations (regarding multiple testing remember the probability for type-1 error for multiple testing is
   :math:`1-(1-\alpha)^n`, where :math:`n` is the number of test and :math:`\alpha` the type-1 error rate of the single test).
+* `A high-bias, low-variance introduction to Machine Learning for physicists <https://arxiv.org/abs/1803.08823>`_ is a nice introduction to core ML techniques. 
 
 Books
 -----
