@@ -9,6 +9,7 @@ Linear Algebra
 * The `no bullshit quite to linear algebra <https://minireference.com/>`_ is a easy and fun read. 
 * The `MIT introduction to linear algebra course from Gilbert Strang <https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/>`_
   is pretty accessible
+* Great visualizations are in `3Blue1Brown Videos <https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw>`_
 
 Statistics
 ------------

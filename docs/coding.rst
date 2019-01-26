@@ -14,9 +14,9 @@ General
 Python
 -------
 
+
 Jupyter notebooks on HPC environments
 `````````````````````````````````````
-
 Using configuration file
 *************************
 
@@ -69,6 +69,8 @@ direct writing of output files, on the most recent version of PBS Pro, this is p
 
 Note that in both approaches the kernel will of course die after the walltime is exceeded.
 
+Speaking about jupyter notebooks, I like the `jupytertheme package <https://github.com/dunovank/jupyter-themes>`_. 
+
 Online
 ``````
 * Valuable and fun are always the `talks by Raymond Hettinger <https://www.youtube.com/playlist?list=PLRVdut2KPAguz3xcd22i_o_onnmDKj3MA>`_
@@ -79,6 +81,7 @@ Online
 Faster Python
 `````````````
 * Consider trying `PyPY <http://pypy.org/features.html>`_ instead of CPython (check the `benchmarks <http://speed.pypy.org/>`_).
+* Nice introduction in vectorization, numpy and numba (and what are the bottlenecks in python) by `Donald Whyte <https://www.youtube.com/watch?v=NoJr08FNQeg>`_ 
 
 C
 --

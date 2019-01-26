@@ -61,3 +61,5 @@ Various trivia
 
   This is directly connected to 
   	 	"Extraordinary claims require extraordinary evidence" -- Carl Sagan/Laplace
+
+* A nice visualization of the famous `Ioannidis paper <https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.0020124>`_ is this `RShiny app <http://shiny.ieis.tue.nl/PPV/>`_
