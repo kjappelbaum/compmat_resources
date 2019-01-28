@@ -10,6 +10,11 @@ Online Resources
 * the `DFT book from John R. Kitchin <http://kitchingroup.cheme.cmu.edu/dft-book/dft.html>`_ does a good job in showing common workflows using `ASE <https://wiki.fysik.dtu.dk/ase/>`__
 * the `CompMatPhys MOOC <http://compmatphys.epotentia.com/courses/computational-materials-physics/>`_ also introduces
   basic workflows and concepts
+* the `teaching the theory in density functional theory school <https://www.cecam.org/workshop-9-1326.html>`_ is a great way to review the theory of DFT (and already the first lecture discusses `Levy's constrained-search formulation <https://www.pnas.org/content/76/12/6062>`_ which is rarely mentioned in classcial curricula).
+
+Articles
+````````
+* `Kieron Burke <http://dft.uci.edu/teaching.php>`_ is a great teach, his `ABC of DFT <http://dft.uci.edu/teaching/lausanne/ABCDFT.pdf>`_ is particulary useful. 
 
 
 QM (general)
