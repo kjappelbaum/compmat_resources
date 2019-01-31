@@ -14,7 +14,7 @@ Online Resources
 
 Articles
 ````````
-* `Kieron Burke <http://dft.uci.edu/teaching.php>`_ is a great teach, his `ABC of DFT <http://dft.uci.edu/teaching/lausanne/ABCDFT.pdf>`_ is particulary useful. 
+* `Kieron Burke <http://dft.uci.edu/teaching.php>`_ is a great teacher, his `ABC of DFT <http://dft.uci.edu/teaching/lausanne/ABCDFT.pdf>`_ is particulary useful. 
 
 
 QM (general)
