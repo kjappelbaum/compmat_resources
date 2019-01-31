@@ -2,8 +2,8 @@
 Machine Learning
 ================= 
 
-Machine Learning is getting a central part of our field.
-
+Machine Learning is getting a central part of our field. There is a `huge curated list with all kinds
+of ML frameworks and packages <https://github.com/josephmisiti/awesome-machine-learning>`_
 
 Online Courses
 --------------
@@ -18,6 +18,8 @@ Articles
 
 Books
 -----
+
+
 
 
 Python Packages
@@ -39,6 +41,7 @@ Python Packages
 * `Edward <http://edwardlib.org/>`_ is a nice package for probabilistic modelling like bayesian neural nets.
 * `PyMC3 <https://docs.pymc.io/>`_ is a popular package for probabilistic programming
 * `missingno <https://github.com/ResidentMario/missingno>`_ is a nice package for analzying missing data
+* `pyGAM <https://github.com/dswah/pyGAM>`_ is a python implementation of `generalized additive models <https://web.stanford.edu/~hastie/Papers/gam.pdf>`_ (a nice overview of GAMs is in a `blogpost from Kim Larsen <https://multithreaded.stitchfix.com/blog/2015/07/30/gam/>`_)
 
 Various trivia
 ----------------
