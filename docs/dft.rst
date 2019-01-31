@@ -33,7 +33,12 @@ Books
 `````
 * The classic book in this field is probably the one written by Tannor: `Introduction to Quantum Mechanics - 
   A Time-Dependent Perspective <http://www.weizmann.ac.il/chemphys/tannor/Book/>`_ 
-
+* A bit more applied is Quantum Mechanics in Chemistry by Schatz and Ratner.
+* Peter Hamm wrote a practical summary of `Mukamel's book about nonlinear spectroscopy <https://mukamel.ps.uci.edu/books.html>`_, which includes good information about the density picture and Feynman diagrams. It's called `Mukamel for dummies <http://www.mitr.p.lodz.pl/evu/lectures/Hamm.pdf>`_ 
 
 Interesting papers
 ``````````````````
+* `Eric Heller <https://www-heller.harvard.edu/>`_ has done some great work on the wavepacket picture (which is in my opinion on of the most intutive ways to understand spectra), his papers are usually quite well written:
+	* `Guided Gaussian Wave Packets <https://pubs.acs.org/doi/10.1021/ar040196y>`_ gives a nice overview of the anatomy of Gaussian wavepacket and methods beyond the TGA
+	* The orginal paper `Time-dependent approach to semiclassical dynamics  <https://aip.scitation.org/doi/pdf/10.1063/1.430620?class=pdf>`_ is also worth reading. 
+	* A really nice connection to spectra (e.g. timescales in autocorrelation function and spectrum) is given in `The Semiclassical Way to Molecular Spectroscopy <https://homepage.univie.ac.at/mario.barbatti/papers/heller/heller_acs_14_368_1981.pdf>`_
