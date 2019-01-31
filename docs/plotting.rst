@@ -19,6 +19,7 @@ Altair
 The `Altair <https://altair-viz.github.io/>`_ library is interesting as it builds on D3 (and allows you to generate :code:`.json` for VEGA or :code:`.html` outputs) whilst being a easy to use, high-level and declerative python library.
 It is relatively easy to build `coupled interactive plots <https://altair-viz.github.io/gallery/seattle_weather_interactive.html>`_.
 
+
 Holoview
 --------
 * `hvplot <https://hvplot.pyviz.org/index.html>`_ offers a even more high-level api and is useful to get e.g. interactive
