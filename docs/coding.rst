@@ -10,12 +10,17 @@ General
      *  `tree <http://mama.indstate.edu/users/ice/tree/>`_
      *  and for copying files etc. `midnightcommander <https://midnight-commander.org/>`_
 * `Visualization of latency numbers every progammer should now <https://people.eecs.berkeley.edu/~rcs/research/interactive_latency.html>`_ (why you want to be in L1 Cache, also nice is the `huminized version with SSD random read as a "normal weekend" and L1 Cache as hearbeat <https://gist.github.com/hellerbarde/2843375>`_ )
-* Bloom filters are interesting data structures for constant time lookup in a compact way, i found this blog article instructive: https://prakhar.me/articles/bloom-filters-for-dummies/
+* Bloom filters are interesting data structures for constant time lookup in a compact way, i found this blog article instructive: https://prakhar.me/articles/  bloom-filters-for-dummies/
 * For SQL design and code the `WWW SQL Designer tool <http://ondras.zarovi.cz/sql/demo/>`_ is pretty useful
 
 Python
 -------
 
+Juypter noteboos tricks
+```````````````````````
+* magics are great :code:`% env` to list enviornmental variables :code:`!` to run shell commands and :code:`% lsmagic` to get a list with all of them. You can even do `profiling <http://pynash.org/2013/03/06/timing-and-profiling/>`_ 
+* ipython widgets can be nice to make simple interactive plots (i.e. for education purposes). The `dominadatalab blog has a nice overview and and interactive ping plot <https://blog.dominodatalab.com/interactive-dashboards-in-jupyter/>`_ 
+* `numpy-html <https://pypi.org/project/numpy-html/>`_ is quite need to render numpy arrays in notebooks.
 
 Jupyter notebooks on HPC environments
 `````````````````````````````````````

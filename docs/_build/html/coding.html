@@ -83,6 +83,7 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Coding</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#general">General</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#python">Python</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#juypter-noteboos-tricks">Juypter noteboos tricks</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#jupyter-notebooks-on-hpc-environments">Jupyter notebooks on HPC environments</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#using-configuration-file">Using configuration file</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#using-tunneling">Using tunneling</a></li>
@@ -208,12 +209,20 @@
 </dl>
 </li>
 <li><a class="reference external" href="https://people.eecs.berkeley.edu/~rcs/research/interactive_latency.html">Visualization of latency numbers every progammer should now</a> (why you want to be in L1 Cache, also nice is the <a class="reference external" href="https://gist.github.com/hellerbarde/2843375">huminized version with SSD random read as a “normal weekend” and L1 Cache as hearbeat</a> )</li>
-<li>Bloom filters are interesting data structures for constant time lookup in a compact way, i found this blog article instructive: <a class="reference external" href="https://prakhar.me/articles/bloom-filters-for-dummies/">https://prakhar.me/articles/bloom-filters-for-dummies/</a></li>
+<li>Bloom filters are interesting data structures for constant time lookup in a compact way, i found this blog article instructive: <a class="reference external" href="https://prakhar.me/articles/">https://prakhar.me/articles/</a>  bloom-filters-for-dummies/</li>
 <li>For SQL design and code the <a class="reference external" href="http://ondras.zarovi.cz/sql/demo/">WWW SQL Designer tool</a> is pretty useful</li>
 </ul>
 </div>
 <div class="section" id="python">
 <h2>Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="juypter-noteboos-tricks">
+<h3>Juypter noteboos tricks<a class="headerlink" href="#juypter-noteboos-tricks" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>magics are great <code class="code docutils literal"><span class="pre">%</span> <span class="pre">env</span></code> to list enviornmental variables <code class="code docutils literal"><span class="pre">!</span></code> to run shell commands and <code class="code docutils literal"><span class="pre">%</span> <span class="pre">lsmagic</span></code> to get a list with all of them. You can even do <a class="reference external" href="http://pynash.org/2013/03/06/timing-and-profiling/">profiling</a></li>
+<li>ipython widgets can be nice to make simple interactive plots (i.e. for education purposes). The <a class="reference external" href="https://blog.dominodatalab.com/interactive-dashboards-in-jupyter/">dominadatalab blog has a nice overview and and interactive ping plot</a></li>
+<li><a class="reference external" href="https://pypi.org/project/numpy-html/">numpy-html</a> is quite need to render numpy arrays in notebooks.</li>
+</ul>
+</div>
 <div class="section" id="jupyter-notebooks-on-hpc-environments">
 <h3>Jupyter notebooks on HPC environments<a class="headerlink" href="#jupyter-notebooks-on-hpc-environments" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="using-configuration-file">
