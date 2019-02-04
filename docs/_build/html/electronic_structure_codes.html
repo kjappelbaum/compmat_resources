@@ -24,7 +24,8 @@
 
   
 
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -173,7 +174,7 @@
 <div class="section" id="general">
 <h2>General<a class="headerlink" href="#general" title="Permalink to this headline">¶</a></h2>
 <ul>
-<li><p class="first">If you want to know something about the <span class="math">\(\Delta\)</span> value (RMS energy difference between equations of state,
+<li><p class="first">If you want to know something about the <span class="math notranslate nohighlight">\(\Delta\)</span> value (RMS energy difference between equations of state,
 as described in <a class="reference external" href="http://science.sciencemag.org/cgi/rapidpdf/351/6280/aad3000?ijkey=teUZMpwU49vhY&amp;keytype=ref&amp;siteid=sci">Reproducibility in density functional
 theory calculations of solids</a>) you should got to <a class="reference external" href="https://molmod.ugent.be/deltacodesdft">https://molmod.ugent.be/deltacodesdft</a>.</p>
 </li>
@@ -183,9 +184,11 @@ theory calculations of solids</a>) you should got to <a class="reference externa
 <blockquote>
 <div><ul class="simple">
 <li>In <a class="reference external" href="https://github.com/vossjo/ase-espresso/wiki">ase-espresso</a> he initializes displaced calculations in the finite difference method with the KS potential of an undisplaced calculation.</li>
-<li>In <a class="reference external" href="http://orbit.dtu.dk/files/4807182/O1freepaper.pdf">another work</a>, he uses charge densities from the ground state to construct an interatomic potential which is then used to construct an approximate Hessian which can be useful for quick estimates of e.g. decomposition temperatures (but it fails for temperatures above the maximum phonon energy and it is <span class="math">\(\Gamma\)</span>-point only)</li>
+<li>In <a class="reference external" href="http://orbit.dtu.dk/files/4807182/O1freepaper.pdf">another work</a>, he uses charge densities from the ground state to construct an interatomic potential which is then used to construct an approximate Hessian which can be useful for quick estimates of e.g. decomposition temperatures (but it fails for temperatures above the maximum phonon energy and it is <span class="math notranslate nohighlight">\(\Gamma\)</span>-point only)</li>
 </ul>
 </div></blockquote>
+</li>
+<li><p class="first"><cite>Elate from FX. Coudert &lt;http://progs.coudert.name/elate&gt;</cite> is a nice python module to analze elastic tensors.</p>
 </li>
 </ul>
 </div>
@@ -205,13 +208,13 @@ the convergence criteria. Double checking the forces is essential here.</p>
 </li>
 <li><p class="first">To avoid stack size errors, you might find it useful to set</p>
 <blockquote>
-<div><div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ulimit</span> <span class="o">-</span><span class="n">s</span> <span class="n">unlimited</span>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ulimit</span> <span class="o">-</span><span class="n">s</span> <span class="n">unlimited</span>
 </pre></div>
 </div>
 </div></blockquote>
 </li>
 </ul>
-<p>in your <code class="code docutils literal"><span class="pre">.bashrc</span></code></p>
+<p>in your <code class="code docutils literal notranslate"><span class="pre">.bashrc</span></code></p>
 </div>
 </div>
 <div class="section" id="cp2k">
@@ -257,7 +260,7 @@ with the potential of a previous (undisplaced) calculation</li>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2019, Kevin M. Jablonka
+        &copy; Copyright 2019, Kevin M. Jablonka.
 
     </p>
   </div>
@@ -276,28 +279,28 @@ with the potential of a previous (undisplaced) calculation</li>
 
   
 
-    
-    
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'./',
-              VERSION:'',
-              LANGUAGE:'None',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 
-  <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
 
   <script type="text/javascript">
       jQuery(function () {

@@ -42,6 +42,23 @@ Python Packages
 * `PyMC3 <https://docs.pymc.io/>`_ is a popular package for probabilistic programming
 * `missingno <https://github.com/ResidentMario/missingno>`_ is a nice package for analzying missing data
 * `pyGAM <https://github.com/dswah/pyGAM>`_ is a python implementation of `generalized additive models <https://web.stanford.edu/~hastie/Papers/gam.pdf>`_ (a nice overview of GAMs is in a `blogpost from Kim Larsen <https://multithreaded.stitchfix.com/blog/2015/07/30/gam/>`_)
+* `eli5 <https://eli5.readthedocs.io/en/latest/overview.html>`_ is a nice package visualize the explanations of mostely white-box models. 
+* `i like to cycle my learning rates <https://github.com/bckenstler/CLR>`_ . Related is the great idea of `snapshot ensembles <https://openreview.net/pdf?id=BJYwwY9ll>`_  I hope to find time at some point to generalize the `keras implemtation <https://github.com/titu1994/Snapshot-Ensembles>`_ a bit more. This blogpost gives a great overview https://www.jeremyjordan.me/nn-learning-rate/
+* something that I starting using way to late is tensorboard, in keras it is simply this callback
+  :: 
+
+    tbCallBack = keras.callbacks.TensorBoard(log_dir='logs', 
+                                         histogram_freq=0, write_graph=True, 
+                                         write_images=True)
+
+   followed by 
+
+   ::
+
+   	 tensorboard --logdir logs
+
+   to actually start tensorboard. 
+* Magpie is not only a `brid <https://en.wikipedia.org/wiki/Magpie>`_ but also `a ML framework for inorganic materials <https://www.nature.com/articles/npjcompumats201628>`_ 
 
 Various trivia
 ----------------
@@ -73,3 +90,6 @@ Various trivia
 		:width: 500px
 	   	:align: center
 	   	:alt: Measured generalization error as a function of the number of parameters (arXiv:1901.01608v3)
+
+* I find `dilated convolutional NNs <https://arxiv.org/pdf/1511.07122.pdf>`_ to be quite a interesting way to increase the perceptive field. Ferenc Huszár gives another description in terms of `Kronecker factorizations of smaller kernels <https://www.inference.vc/dilated-convolutions-and-kronecker-factorisation/>`_ 
+*`Spatial dropout <https://arxiv.org/pdf/1411.4280.pdf>`_ is quite interesting to make dropout work better on spatial correlations. 

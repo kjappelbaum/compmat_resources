@@ -14,6 +14,7 @@ General
 	
 	* In `ase-espresso <https://github.com/vossjo/ase-espresso/wiki>`_ he initializes displaced calculations in the finite difference method with the KS potential of an undisplaced calculation.
 	* In `another work <http://orbit.dtu.dk/files/4807182/O1freepaper.pdf>`_, he uses charge densities from the ground state to construct an interatomic potential which is then used to construct an approximate Hessian which can be useful for quick estimates of e.g. decomposition temperatures (but it fails for temperatures above the maximum phonon energy and it is :math:`\Gamma`-point only)
+* `Elate from FX. Coudert <http://progs.coudert.name/elate>` is a nice python module to analze elastic tensors.
 
 VASP
 ----

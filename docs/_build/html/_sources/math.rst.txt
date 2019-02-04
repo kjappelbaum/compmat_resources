@@ -10,6 +10,7 @@ Linear Algebra
 * The `MIT introduction to linear algebra course from Gilbert Strang <https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/>`_
   is pretty accessible
 * Great visualizations are in `3Blue1Brown Videos <https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw>`_
+* A more advanced summary is `The Matrix Cookbook <https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf>`_ 
 
 Statistics
 ------------
