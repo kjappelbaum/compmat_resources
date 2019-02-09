@@ -25,5 +25,5 @@ main intent for writing this is having a place where I can keep track of useful 
    dft
    classical
    fun
-
+   open_science
 

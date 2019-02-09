@@ -11,5 +11,6 @@ Fun
 * `statistical thermodynamics as the maximally noncommital choice (link to information theory via maximum-entropy distributions and Shannon entropy) <http://www.sns.ias.edu/~tlusty/courses/InfoInBio/Papers/JaynesInformationTheory.pdf>`_ 
 * I do not like describing entropy as disorder as I think that it can be misleading:
   * `Disorder - A Cracked Crutch for Supporting Entropy Discussions <https://pubs.acs.org/doi/abs/10.1021/ed079p187>`_
-  * `Entropy producing complex, ordered structures <https://www.nature.com/articles/nature08641>`_ 
+  * `Entropy producing complex, ordered structures <https://www.nature.com/articles/nature08641>`_  (cp. Onsager rods or freezing hard spheres, also interesting is the influence of the entropy tax on self-assembly)
   * `Order through entropy <https://www.nature.com/articles/nmat4178?page=4>`_
+* Living in Switzerland, `this <https://pubs.acs.org/doi/10.1021/acsomega.8b02424>`_ is essential knowledge 
