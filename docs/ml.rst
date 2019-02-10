@@ -92,4 +92,5 @@ Various trivia
 	   	:alt: Measured generalization error as a function of the number of parameters (arXiv:1901.01608v3)
 
 * I find `dilated convolutional NNs <https://arxiv.org/pdf/1511.07122.pdf>`_ to be quite a interesting way to increase the perceptive field. Ferenc Huszár gives another description in terms of `Kronecker factorizations of smaller kernels <https://www.inference.vc/dilated-convolutions-and-kronecker-factorisation/>`_ 
-*`Spatial dropout <https://arxiv.org/pdf/1411.4280.pdf>`_ is quite interesting to make dropout work better on spatial correlations. 
+* `Spatial dropout <https://arxiv.org/pdf/1411.4280.pdf>`_ is quite interesting to make dropout work better on spatial correlations. 
+* `Jensen's paper about GA for logP optimization <https://chemrxiv.org/articles/Graph-based_Genetic_Algorithm_and_Generative_Model_Monte_Carlo_Tree_Search_for_the_Exploration_of_Chemical_Space/7240751>`_ and also a recent work from `Berend Smit's group <https://www.nature.com/articles/s41467-019-08483-9>`_ are reminders that we shouldn't forget good old techniques such as GA. 
