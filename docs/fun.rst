@@ -14,3 +14,4 @@ Fun
   * `Entropy producing complex, ordered structures <https://www.nature.com/articles/nature08641>`_  (cp. Onsager rods or freezing hard spheres, also interesting is the influence of the entropy tax on self-assembly)
   * `Order through entropy <https://www.nature.com/articles/nmat4178?page=4>`_
 * Living in Switzerland, `this <https://pubs.acs.org/doi/10.1021/acsomega.8b02424>`_ is essential knowledge 
+* Pickard's `hyperspatial geometry optimization <https://arxiv.org/abs/1902.02232v1>`_ seems quite interesting for me to expedite geometry searches and it reminded me of the Nosé-Hoover thermostat ... 

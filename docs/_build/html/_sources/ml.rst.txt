@@ -21,7 +21,6 @@ Books
 
 
 
-
 Python Packages
 ---------------
 * `shap <https://github.com/slundberg/shap>`_ : Shapely values are a nice way 

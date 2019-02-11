@@ -24,8 +24,7 @@
 
   
 
-  
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -129,6 +128,7 @@
 <li class="toctree-l1"><a class="reference internal" href="dft.html">QM and DFT theoretical background</a></li>
 <li class="toctree-l1"><a class="reference internal" href="classical.html">Classical simulations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="fun.html">Fun</a></li>
+<li class="toctree-l1"><a class="reference internal" href="open_science.html">Open Science</a></li>
 </ul>
 
             
@@ -219,7 +219,7 @@
 <div class="section" id="juypter-noteboos-tricks">
 <h3>Juypter noteboos tricks<a class="headerlink" href="#juypter-noteboos-tricks" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li>magics are great <code class="code docutils literal notranslate"><span class="pre">%</span> <span class="pre">env</span></code> to list enviornmental variables <code class="code docutils literal notranslate"><span class="pre">!</span></code> to run shell commands and <code class="code docutils literal notranslate"><span class="pre">%</span> <span class="pre">lsmagic</span></code> to get a list with all of them. You can even do <a class="reference external" href="http://pynash.org/2013/03/06/timing-and-profiling/">profiling</a></li>
+<li>magics are great <code class="code docutils literal"><span class="pre">%</span> <span class="pre">env</span></code> to list enviornmental variables <code class="code docutils literal"><span class="pre">!</span></code> to run shell commands and <code class="code docutils literal"><span class="pre">%</span> <span class="pre">lsmagic</span></code> to get a list with all of them. You can even do <a class="reference external" href="http://pynash.org/2013/03/06/timing-and-profiling/">profiling</a></li>
 <li>ipython widgets can be nice to make simple interactive plots (i.e. for education purposes). The <a class="reference external" href="https://blog.dominodatalab.com/interactive-dashboards-in-jupyter/">dominadatalab blog has a nice overview and and interactive ping plot</a></li>
 <li><a class="reference external" href="https://pypi.org/project/numpy-html/">numpy-html</a> is quite need to render numpy arrays in notebooks.</li>
 </ul>
@@ -230,24 +230,24 @@
 <h4>Using configuration file<a class="headerlink" href="#using-configuration-file" title="Permalink to this headline">¶</a></h4>
 <p>In some cases it can be useful to, instead of running the ipython kernel on the headnode, to just submit it
 to computing node of cluster and then access the kernel from the browser (either from the headnode or your local machine).</p>
-<p>You can achieve this by setting some things in your <code class="code docutils literal notranslate"><span class="pre">~/.jupyter/jupyter_notebook_config.py</span></code> file you can
-create this file using <code class="code docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span> <span class="pre">--generate-config</span></code>.</p>
+<p>You can achieve this by setting some things in your <code class="code docutils literal"><span class="pre">~/.jupyter/jupyter_notebook_config.py</span></code> file you can
+create this file using <code class="code docutils literal"><span class="pre">jupyter</span> <span class="pre">notebook</span> <span class="pre">--generate-config</span></code>.</p>
 <p>In this file you then can modify the following:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">c</span><span class="o">.</span><span class="n">NotebookApp</span><span class="o">.</span><span class="n">ip</span> <span class="o">=</span> <span class="s1">&#39;*&#39;</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">c</span><span class="o">.</span><span class="n">NotebookApp</span><span class="o">.</span><span class="n">ip</span> <span class="o">=</span> <span class="s1">&#39;*&#39;</span>
 <span class="n">c</span><span class="o">.</span><span class="n">NotebookApp</span><span class="o">.</span><span class="n">open_browser</span> <span class="o">=</span> <span class="kc">False</span>
 <span class="n">c</span><span class="o">.</span><span class="n">NotebookApp</span><span class="o">.</span><span class="n">port</span> <span class="o">=</span> <span class="n">XXXXX</span>
 </pre></div>
 </div>
-<p>Where <code class="code docutils literal notranslate"><span class="pre">XXXX</span></code> is a number greater than 8888. You might also want to set a password instead of a token
-(you can do this in the config file or by running <code class="code docutils literal notranslate"><span class="pre">jupyter-notebook</span> <span class="pre">password</span></code>).
-In your submission script you can then add <code class="code docutils literal notranslate"><span class="pre">hostname</span></code> to print the hostname which you can then use to access
-the notebook at <code class="code docutils literal notranslate"><span class="pre">hostname:XXXXX</span></code>. In some cases you might also want to hardcode  <code class="code docutils literal notranslate"><span class="pre">c.NotebookApp.ip</span></code> to
+<p>Where <code class="code docutils literal"><span class="pre">XXXX</span></code> is a number greater than 8888. You might also want to set a password instead of a token
+(you can do this in the config file or by running <code class="code docutils literal"><span class="pre">jupyter-notebook</span> <span class="pre">password</span></code>).
+In your submission script you can then add <code class="code docutils literal"><span class="pre">hostname</span></code> to print the hostname which you can then use to access
+the notebook at <code class="code docutils literal"><span class="pre">hostname:XXXXX</span></code>. In some cases you might also want to hardcode  <code class="code docutils literal"><span class="pre">c.NotebookApp.ip</span></code> to
 the ip of a particular compute node and then simply bookmark this address.</p>
 </div>
 <div class="section" id="using-tunneling">
 <h4>Using tunneling<a class="headerlink" href="#using-tunneling" title="Permalink to this headline">¶</a></h4>
 <p>Add the following lines to your submission script (in this case setting a password is really useful)</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>unset XDG_RUNTIME_DIR
+<div class="highlight-default"><div class="highlight"><pre><span></span>unset XDG_RUNTIME_DIR
 NODEIP=$(hostname -i)
 NODEPORT=$(shuf -i 8888-9999 -n 1)
 echo $NODEIP:$NODEPORT
@@ -255,16 +255,16 @@ echo $NODEIP:$NODEPORT
 jupyter-notebook --ip=$NODEIP --port=$NODEPORT --no-browser
 </pre></div>
 </div>
-<p><code class="code docutils literal notranslate"><span class="pre">shuf</span> <span class="pre">-i</span> <span class="pre">8888-9999</span> <span class="pre">-n</span> <span class="pre">1</span></code> is just to get a random port (binding to 0 and letting the OS is chose is better
+<p><code class="code docutils literal"><span class="pre">shuf</span> <span class="pre">-i</span> <span class="pre">8888-9999</span> <span class="pre">-n</span> <span class="pre">1</span></code> is just to get a random port (binding to 0 and letting the OS is chose is better
 practice, but this here is easier). You can then look into the output file which your
-scheduler produced as it should contain <code class="code docutils literal notranslate"><span class="pre">NODEIP</span></code> and <code class="code docutils literal notranslate"><span class="pre">NODEPORT</span></code> which you can then use to
+scheduler produced as it should contain <code class="code docutils literal"><span class="pre">NODEIP</span></code> and <code class="code docutils literal"><span class="pre">NODEPORT</span></code> which you can then use to
 establish a tunnel connection from your local machine using</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>ssh -N -L 8888:$NODEIP:$NODEPORT &lt;username&gt;@&lt;machinename&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span>ssh -N -L 8888:$NODEIP:$NODEPORT &lt;username&gt;@&lt;machinename&gt;
 </pre></div>
 </div>
-<p>on your local machine you can now access the jupyter server at <code class="code docutils literal notranslate"><span class="pre">http://localhost:8888</span></code>. If you have to use
+<p>on your local machine you can now access the jupyter server at <code class="code docutils literal"><span class="pre">http://localhost:8888</span></code>. If you have to use
 windows on your local machine, you can set up tunneling using MobaXTerm. On some schedulers you may want to enable
-direct writing of output files, on the most recent version of PBS Pro, this is possible with <code class="code docutils literal notranslate"><span class="pre">qsub</span> <span class="pre">-koed</span></code>.</p>
+direct writing of output files, on the most recent version of PBS Pro, this is possible with <code class="code docutils literal"><span class="pre">qsub</span> <span class="pre">-koed</span></code>.</p>
 <p>Note that in both approaches the kernel will of course die after the walltime is exceeded.</p>
 <p>Speaking about jupyter notebooks, I like the <a class="reference external" href="https://github.com/dunovank/jupyter-themes">jupytertheme package</a>.</p>
 </div>
@@ -304,12 +304,12 @@ started with C and learn about lisps</li>
 configuring it.</p>
 <div class="section" id="configuration">
 <h4>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h4>
-<p>Some useful settings for the <code class="code docutils literal notranslate"><span class="pre">.vimrc</span></code> file are:</p>
+<p>Some useful settings for the <code class="code docutils literal"><span class="pre">.vimrc</span></code> file are:</p>
 <ul>
-<li><p class="first">syntax highlighting <code class="code docutils literal notranslate"><span class="pre">syntax</span> <span class="pre">enable</span></code> is probably self-explanatory</p>
+<li><p class="first">syntax highlighting <code class="code docutils literal"><span class="pre">syntax</span> <span class="pre">enable</span></code> is probably self-explanatory</p>
 </li>
 <li><p class="first">search</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span> <span class="n">incsearch</span>           <span class="s2">&quot; lookahead search</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="nb">set</span> <span class="n">incsearch</span>           <span class="s2">&quot; lookahead search</span>
 <span class="nb">set</span> <span class="n">ignorecase</span>          <span class="s2">&quot; in most cases I want to be case-insenstivie</span>
 <span class="nb">set</span> <span class="n">smartcase</span>           <span class="s2">&quot; unless i explicitely use uppercase</span>
 <span class="nb">set</span> <span class="n">hlsearch</span>            <span class="s2">&quot; highlight matches</span>
@@ -317,7 +317,7 @@ configuring it.</p>
 </div>
 </li>
 <li><p class="first">identations</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span> <span class="n">tabstop</span><span class="o">=</span><span class="mi">4</span>           <span class="s2">&quot; number of spaces per &lt;TAB&gt;</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="nb">set</span> <span class="n">tabstop</span><span class="o">=</span><span class="mi">4</span>           <span class="s2">&quot; number of spaces per &lt;TAB&gt;</span>
 <span class="nb">set</span> <span class="n">expandtab</span>           <span class="s2">&quot; convert &lt;TAB&gt; key-presses to spaces in insert mode</span>
 <span class="nb">set</span> <span class="n">shiftwidth</span><span class="o">=</span><span class="mi">4</span>        <span class="s2">&quot; set a &lt;TAB&gt; key-press equal to 4 spaces</span>
 
@@ -327,7 +327,7 @@ configuring it.</p>
 </div>
 </li>
 <li><p class="first">Persistent undo</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>if has(&#39;persistent_undo&#39;)
+<div class="highlight-default"><div class="highlight"><pre><span></span>if has(&#39;persistent_undo&#39;)
   &quot; Save all undo files in a single location (less messy, more risky)...
   set undodir=$HOME/.VIM_UNDO_FILES
 
@@ -342,16 +342,16 @@ endif
 </div>
 </li>
 <li><p class="first">I am paranoid, I want to lose at max 10 keystrokes</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span> <span class="n">updatecount</span><span class="o">=</span><span class="mi">10</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="nb">set</span> <span class="n">updatecount</span><span class="o">=</span><span class="mi">10</span>
 </pre></div>
 </div>
 </li>
 <li><p class="first">If you do not want to type all the search replace syntax (vide infra) remap it</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nmap</span>  <span class="n">S</span>  <span class="p">:</span><span class="o">%</span><span class="n">s</span><span class="o">//</span><span class="n">g</span><span class="o">&lt;</span><span class="n">LEFT</span><span class="o">&gt;&lt;</span><span class="n">LEFT</span><span class="o">&gt;</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">nmap</span>  <span class="n">S</span>  <span class="p">:</span><span class="o">%</span><span class="n">s</span><span class="o">//</span><span class="n">g</span><span class="o">&lt;</span><span class="n">LEFT</span><span class="o">&gt;&lt;</span><span class="n">LEFT</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>now you need to type only</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SX</span><span class="o">/</span><span class="n">Y</span><span class="o">&lt;</span><span class="n">CR</span><span class="o">&gt;</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">SX</span><span class="o">/</span><span class="n">Y</span><span class="o">&lt;</span><span class="n">CR</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>for global search/replace on all lines.</p>
@@ -368,22 +368,22 @@ There you can also find how to create the <a class="reference external" href="ht
 <li><a class="reference external" href="https://github.com/chip/vim-fat-finger">fatfinger</a>: corrects common misspellings</li>
 <li><a class="reference external" href="https://www.vim.org/scripts/script.php?script_id=790">python syntax highlighting</a></li>
 <li><a class="reference external" href="https://github.com/nvie/vim-flake8">flake8</a> for PEP8 style and error checking</li>
-<li>if you are used to <code class="code docutils literal notranslate"><span class="pre">&lt;TAB&gt;</span></code> completion, you might like <a class="reference external" href="https://www.vim.org/scripts/script.php?script_id=1643">supertab</a></li>
+<li>if you are used to <code class="code docutils literal"><span class="pre">&lt;TAB&gt;</span></code> completion, you might like <a class="reference external" href="https://www.vim.org/scripts/script.php?script_id=1643">supertab</a></li>
 <li><a class="reference external" href="https://github.com/davidhalter/jedi-vim">jedi-vim</a> for some nice python autocompletion</li>
 </ul>
 </div>
 <div class="section" id="commands">
 <h4>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h4>
 <ul>
-<li><p class="first">Use <code class="code docutils literal notranslate"><span class="pre">$</span></code> to get to the end of the lines</p>
+<li><p class="first">Use <code class="code docutils literal"><span class="pre">$</span></code> to get to the end of the lines</p>
 </li>
-<li><p class="first">Use different navigation levels <code class="code docutils literal notranslate"><span class="pre">b</span></code>, <code class="code docutils literal notranslate"><span class="pre">w</span></code>, <code class="code docutils literal notranslate"><span class="pre">{</span></code> and <code class="code docutils literal notranslate"><span class="pre">(</span></code></p>
+<li><p class="first">Use different navigation levels <code class="code docutils literal"><span class="pre">b</span></code>, <code class="code docutils literal"><span class="pre">w</span></code>, <code class="code docutils literal"><span class="pre">{</span></code> and <code class="code docutils literal"><span class="pre">(</span></code></p>
 </li>
-<li><p class="first">Search/Replace (<code class="code docutils literal notranslate"><span class="pre">g</span></code> means global)</p>
+<li><p class="first">Search/Replace (<code class="code docutils literal"><span class="pre">g</span></code> means global)</p>
 <blockquote>
 <div><ul class="simple">
-<li>all lines <code class="code docutils literal notranslate"><span class="pre">:%s/foo/bar/g</span></code></li>
-<li>this line <code class="code docutils literal notranslate"><span class="pre">:s/foo/bar/g</span></code></li>
+<li>all lines <code class="code docutils literal"><span class="pre">:%s/foo/bar/g</span></code></li>
+<li>this line <code class="code docutils literal"><span class="pre">:s/foo/bar/g</span></code></li>
 </ul>
 </div></blockquote>
 </li>
@@ -451,7 +451,7 @@ way to go. There is also a <a class="reference external" href="https://github.co
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2019, Kevin M. Jablonka.
+        &copy; Copyright 2019, Kevin M. Jablonka
 
     </p>
   </div>
@@ -470,28 +470,28 @@ way to go. There is also a <a class="reference external" href="https://github.co
 
   
 
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
-            VERSION:'',
-            LANGUAGE:'None',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'./',
+              VERSION:'',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
 
   
 
-  
-  
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-  
+  <script type="text/javascript" src="_static/js/theme.js"></script>
 
   <script type="text/javascript">
       jQuery(function () {

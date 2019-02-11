@@ -24,8 +24,7 @@
 
   
 
-  
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -173,7 +172,7 @@ of ML frameworks and packages</a></p>
 <ul class="simple">
 <li><a class="reference external" href="https://arxiv.org/abs/1811.12808">Model Evaluation, Model Selection, and Algorithm Selection in Machine Learning</a>
 focusses on classification problems but still is a great resource of how to perform performance evaluations (regarding multiple testing remember the probability for type-1 error for multiple testing is
-<span class="math notranslate nohighlight">\(1-(1-\alpha)^n\)</span>, where <span class="math notranslate nohighlight">\(n\)</span> is the number of test and <span class="math notranslate nohighlight">\(\alpha\)</span> the type-1 error rate of the single test).</li>
+<span class="math">\(1-(1-\alpha)^n\)</span>, where <span class="math">\(n\)</span> is the number of test and <span class="math">\(\alpha\)</span> the type-1 error rate of the single test).</li>
 <li><a class="reference external" href="https://arxiv.org/abs/1803.08823">A high-bias, low-variance introduction to Machine Learning for physicists</a> is a nice introduction to core ML techniques.</li>
 </ul>
 </div>
@@ -191,7 +190,7 @@ gives an overview over this and other methods for interpretable ML</p>
 <li><p class="first">holoviews</p>
 </li>
 <li><p class="first"><a class="reference external" href="https://github.com/pandas-profiling/pandas-profiling">pandas profiling</a> gives some more useful information
-for exploratory data analysis than <code class="code docutils literal notranslate"><span class="pre">df.describe()</span></code></p>
+for exploratory data analysis than <code class="code docutils literal"><span class="pre">df.describe()</span></code></p>
 </li>
 <li><p class="first"><a class="reference external" href="https://github.com/WillKoehrsen/feature-selector">feature selector</a>
 is a useful package for intial steps of feature engineering</p>
@@ -217,7 +216,7 @@ and kernels</p>
 <li><p class="first"><a class="reference external" href="https://github.com/bckenstler/CLR">i like to cycle my learning rates</a> . Related is the great idea of <a class="reference external" href="https://openreview.net/pdf?id=BJYwwY9ll">snapshot ensembles</a>  I hope to find time at some point to generalize the <a class="reference external" href="https://github.com/titu1994/Snapshot-Ensembles">keras implemtation</a> a bit more. This blogpost gives a great overview <a class="reference external" href="https://www.jeremyjordan.me/nn-learning-rate/">https://www.jeremyjordan.me/nn-learning-rate/</a></p>
 </li>
 <li><p class="first">something that I starting using way to late is tensorboard, in keras it is simply this callback</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span> <span class="n">tbCallBack</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">callbacks</span><span class="o">.</span><span class="n">TensorBoard</span><span class="p">(</span><span class="n">log_dir</span><span class="o">=</span><span class="s1">&#39;logs&#39;</span><span class="p">,</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span> <span class="n">tbCallBack</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">callbacks</span><span class="o">.</span><span class="n">TensorBoard</span><span class="p">(</span><span class="n">log_dir</span><span class="o">=</span><span class="s1">&#39;logs&#39;</span><span class="p">,</span>
                                       <span class="n">histogram_freq</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">write_graph</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
                                       <span class="n">write_images</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
@@ -238,12 +237,12 @@ and kernels</p>
 <div class="section" id="various-trivia">
 <h2>Various trivia<a class="headerlink" href="#various-trivia" title="Permalink to this headline">¶</a></h2>
 <ul>
-<li><p class="first">An underappreciated measure of centreal tendency is the trimean (<span class="math notranslate nohighlight">\(TM\)</span>)</p>
+<li><p class="first">An underappreciated measure of centreal tendency is the trimean (<span class="math">\(TM\)</span>)</p>
 <blockquote>
-<div><div class="math notranslate nohighlight">
+<div><div class="math">
 \[TM = \frac{Q_1 + 2Q_1 + Q_3}{4},\]</div>
 </div></blockquote>
-<p>where <span class="math notranslate nohighlight">\(QM_2\)</span> is the median and <span class="math notranslate nohighlight">\(Q_1\)</span> and <span class="math notranslate nohighlight">\(Q_2\)</span> are the quartiles.</p>
+<p>where <span class="math">\(QM_2\)</span> is the median and <span class="math">\(Q_1\)</span> and <span class="math">\(Q_2\)</span> are the quartiles.</p>
 <blockquote>
 <div><p>“An advantage of the trimean as a measure of the center (of a distribution) is that it combines the median’s emphasis on center values with the midhinge’s attention to the extremes.” — Herbert F. Weisberg, Central Tendency and Variability.</p>
 </div></blockquote>
@@ -260,7 +259,7 @@ and kernels</p>
 </li>
 <li><p class="first">A nice visualization of the famous <a class="reference external" href="https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.0020124">Ioannidis paper</a> is this <a class="reference external" href="http://shiny.ieis.tue.nl/PPV/">RShiny app</a></p>
 </li>
-<li><p class="first">A quite interesting discussion of the variance in the output function is reduced by adding more parameters to a (ensembled) network which then leads to a lower generalization error. They also provide a discussion of a divergence of the error at <span class="math notranslate nohighlight">\(N^*\)</span> for networks without regularization. Preprint version is on <a class="reference external" href="https://export.arxiv.org/pdf/1901.01608">arXiv:1901.01608v3</a></p>
+<li><p class="first">A quite interesting discussion of the variance in the output function is reduced by adding more parameters to a (ensembled) network which then leads to a lower generalization error. They also provide a discussion of a divergence of the error at <span class="math">\(N^*\)</span> for networks without regularization. Preprint version is on <a class="reference external" href="https://export.arxiv.org/pdf/1901.01608">arXiv:1901.01608v3</a></p>
 <blockquote>
 <div><a class="reference internal image-reference" href="_images/generalization_error_parameters.jpg"><img alt="Measured generalization error as a function of the number of parameters (arXiv:1901.01608v3)" class="align-center" src="_images/generalization_error_parameters.jpg" style="width: 500px;" /></a>
 </div></blockquote>
@@ -295,7 +294,7 @@ and kernels</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2019, Kevin M. Jablonka.
+        &copy; Copyright 2019, Kevin M. Jablonka
 
     </p>
   </div>
@@ -314,28 +313,28 @@ and kernels</p>
 
   
 
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
-            VERSION:'',
-            LANGUAGE:'None',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'./',
+              VERSION:'',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
 
   
 
-  
-  
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-  
+  <script type="text/javascript" src="_static/js/theme.js"></script>
 
   <script type="text/javascript">
       jQuery(function () {
