@@ -16,4 +16,7 @@ Fun
 * Living in Switzerland, `this <https://pubs.acs.org/doi/10.1021/acsomega.8b02424>`_ is essential knowledge 
 * Pickard's `hyperspatial geometry optimization <https://arxiv.org/abs/1902.02232v1>`_ seems quite interesting for me to expedite geometry searches and it reminded me of the Nosé-Hoover thermostat ... 
 * `Our AI skills might be worth less than we think <https://www.kdnuggets.com/2019/01/your-ai-skills-worth-less-than-you-think.html>`_ 
-* I didn't think about the `enviornmental impact of streaming music <http://www.bbc.com/future/story/20190207-why-streaming-music-may-be-bad-for-climate-change>`_ before reading this article. 
+* I didn't think about the `enviornmental impact of streaming music <http://www.bbc.com/future/story/20190207-why-streaming-music-may-be-bad-for-climate-change>`_ before reading this article.
+* Short reads:
+  * `Counterexample Euler's conjecture <https://www.ams.org/journals/mcom/1967-21-097/S0025-5718-1967-0220669-3/S0025-5718-1967-0220669-3.pdf>`_ 
+  * `Writer's block treatment <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1311997/>`_ 
