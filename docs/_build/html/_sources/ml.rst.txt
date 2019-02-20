@@ -5,6 +5,8 @@ Machine Learning
 Machine Learning is getting a central part of our field. There is a `huge curated list with all kinds
 of ML frameworks and packages <https://github.com/josephmisiti/awesome-machine-learning>`_
 
+The most recent advances can be found with paper and code on `paperswithcode <https://paperswithcode.com/>`_ 
+
 Online Courses
 --------------
 
