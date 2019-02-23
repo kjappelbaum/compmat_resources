@@ -20,3 +20,5 @@ Fun
 * Short reads:
   * `Counterexample Euler's conjecture <https://www.ams.org/journals/mcom/1967-21-097/S0025-5718-1967-0220669-3/S0025-5718-1967-0220669-3.pdf>`_ 
   * `Writer's block treatment <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1311997/>`_ 
+* Bad reads:
+  * Found on `Twitter <https://twitter.com/ZeoliteMiFi/status/1070046369300312065?s=09>`_:  `The theoretical calculations indicated that with increasing Si/Ge ratio or a decrease in the amount of Ge, the framework energy of the D4R units rapidly increase` in `a paper without a computational chemist amongst the reviewers <https://onlinelibrary.wiley.com/doi/full/10.1002/chem.201802255>`_
