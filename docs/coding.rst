@@ -7,8 +7,8 @@ General
 * Software developers who train for interviews use `Hackerrank <https://www.hackerrank.com/interview/interview-preparation-kit>`_ but it has nice problems if you just want to improve your computational thinking and coding skills in general
 * The `Common-Sense Guide to Data Structures and Algorithms: Level Up Your Core Programming Skills <https://pragprog.com/book/jwdsal/a-common-sense-guide-to-data-structures-and-algorithms>`_, written by Jay Wengrow, is a fast and easy read to get an introductions to datastructures, time complexity and some important sorting and searching algorithms  
 * for filemagement I find it useful to sometimes use 
-     *  `tree <http://mama.indstate.edu/users/ice/tree/>`_
-     *  and for copying files etc. `midnightcommander <https://midnight-commander.org/>`_
+  *  `tree <http://mama.indstate.edu/users/ice/tree/>`_
+  *  and for copying files etc. `midnightcommander <https://midnight-commander.org/>`_
 * `Visualization of latency numbers every progammer should now <https://people.eecs.berkeley.edu/~rcs/research/interactive_latency.html>`_ (why you want to be in L1 Cache, also nice is the `huminized version with SSD random read as a "normal weekend" and L1 Cache as hearbeat <https://gist.github.com/hellerbarde/2843375>`_ )
 * Bloom filters are interesting data structures for constant time lookup in a compact way, i found this blog article instructive: https://prakhar.me/articles/  bloom-filters-for-dummies/
 * For SQL design and code the `WWW SQL Designer tool <http://ondras.zarovi.cz/sql/demo/>`_ is pretty useful

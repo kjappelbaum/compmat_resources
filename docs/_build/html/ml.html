@@ -217,19 +217,18 @@ and kernels</p>
 <li><p class="first"><a class="reference external" href="https://github.com/bckenstler/CLR">i like to cycle my learning rates</a> . Related is the great idea of <a class="reference external" href="https://openreview.net/pdf?id=BJYwwY9ll">snapshot ensembles</a>  I hope to find time at some point to generalize the <a class="reference external" href="https://github.com/titu1994/Snapshot-Ensembles">keras implemtation</a> a bit more. This blogpost gives a great overview <a class="reference external" href="https://www.jeremyjordan.me/nn-learning-rate/">https://www.jeremyjordan.me/nn-learning-rate/</a></p>
 </li>
 <li><p class="first">something that I starting using way to late is tensorboard, in keras it is simply this callback</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span> <span class="n">tbCallBack</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">callbacks</span><span class="o">.</span><span class="n">TensorBoard</span><span class="p">(</span><span class="n">log_dir</span><span class="o">=</span><span class="s1">&#39;logs&#39;</span><span class="p">,</span>
-                                      <span class="n">histogram_freq</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">write_graph</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-                                      <span class="n">write_images</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-
-<span class="n">followed</span> <span class="n">by</span>
-
-<span class="p">::</span>
-
-      <span class="n">tensorboard</span> <span class="o">--</span><span class="n">logdir</span> <span class="n">logs</span>
-
-<span class="n">to</span> <span class="n">actually</span> <span class="n">start</span> <span class="n">tensorboard</span><span class="o">.</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tbCallBack</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">callbacks</span><span class="o">.</span><span class="n">TensorBoard</span><span class="p">(</span><span class="n">log_dir</span><span class="o">=</span><span class="s1">&#39;logs&#39;</span><span class="p">,</span>
+                                     <span class="n">histogram_freq</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">write_graph</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                                     <span class="n">write_images</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>followed by</p>
+<blockquote>
+<div><div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tensorboard</span> <span class="o">--</span><span class="n">logdir</span> <span class="n">logs</span>
+</pre></div>
+</div>
+<p>to actually start tensorboard.</p>
+</div></blockquote>
 </li>
 <li><p class="first">Magpie is not only a <a class="reference external" href="https://en.wikipedia.org/wiki/Magpie">brid</a> but also <a class="reference external" href="https://www.nature.com/articles/npjcompumats201628">a ML framework for inorganic materials</a></p>
 </li>
