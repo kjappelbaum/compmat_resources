@@ -54,11 +54,11 @@ Python Packages
 
   followed by 
 
-   ::
+  ::
 
-   	 tensorboard --logdir logs
+    tensorboard --logdir logs
 
-   to actually start tensorboard. 
+  to actually start tensorboard. 
 * Magpie is not only a `brid <https://en.wikipedia.org/wiki/Magpie>`_ but also `a ML framework for inorganic materials <https://www.nature.com/articles/npjcompumats201628>`_ 
 * `PyOD <https://github.com/yzhao062/pyod>`_ contains loads of different tools for outlier detection
 * `tpot is a powerful way to optimize complete ML pipelines <https://github.com/EpistasisLab/tpot>`_ 
