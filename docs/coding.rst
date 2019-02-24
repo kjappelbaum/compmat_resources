@@ -12,13 +12,15 @@ General
 * `Visualization of latency numbers every progammer should now <https://people.eecs.berkeley.edu/~rcs/research/interactive_latency.html>`_ (why you want to be in L1 Cache, also nice is the `huminized version with SSD random read as a "normal weekend" and L1 Cache as hearbeat <https://gist.github.com/hellerbarde/2843375>`_ )
 * Bloom filters are interesting data structures for constant time lookup in a compact way, i found this blog article instructive: https://prakhar.me/articles/  bloom-filters-for-dummies/
 * For SQL design and code the `WWW SQL Designer tool <http://ondras.zarovi.cz/sql/demo/>`_ is pretty useful
+* `Best Practices for Scientific Computing <https://arxiv.org/abs/1210.0530>`_ is a good intro in software development for scientists
 
 Python
 -------
+* `Why scientists should learn to program in Python <https://www.cambridge.org/core/journals/powder-diffraction/article/why-scientists-should-learn-to-program-in-python-/EB88FFCC7384998768AFDAE219EF6EFA>`_ is a neat introduction to python for natural scientists
 
 Juypter noteboos tricks
 ```````````````````````
-* magics are great :code:`% env` to list enviornmental variables :code:`!` to run shell commands and :code:`% lsmagic` to get a list with all of them. You can even do `profiling <http://pynash.org/2013/03/06/timing-and-profiling/>`_ 
+* magics are great :code:`% env` to list enviornmental variables :code:`!` to run shell commands and :code:`% lsmagic` to get a list with all of them. You can even do `profiling <http://pynash.org/2013/03/06/timing-and-profiling/>`_. Another nice one is :code:`% pastebin ` with which you can select linenumbers which you want to paste to pastebin
 * ipython widgets can be nice to make simple interactive plots (i.e. for education purposes). The `dominadatalab blog has a nice overview and and interactive ping plot <https://blog.dominodatalab.com/interactive-dashboards-in-jupyter/>`_ 
 * `numpy-html <https://pypi.org/project/numpy-html/>`_ is quite need to render numpy arrays in notebooks.
 
