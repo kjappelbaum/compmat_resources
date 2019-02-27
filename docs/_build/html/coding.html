@@ -117,6 +117,10 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#pre-commit">Pre-Commit</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#documentation">Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#schedulers">Schedulers</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#sge">SGE</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -200,9 +204,11 @@
 <ul class="simple">
 <li>Software developers who train for interviews use <a class="reference external" href="https://www.hackerrank.com/interview/interview-preparation-kit">Hackerrank</a> but it has nice problems if you just want to improve your computational thinking and coding skills in general</li>
 <li>The <a class="reference external" href="https://pragprog.com/book/jwdsal/a-common-sense-guide-to-data-structures-and-algorithms">Common-Sense Guide to Data Structures and Algorithms: Level Up Your Core Programming Skills</a>, written by Jay Wengrow, is a fast and easy read to get an introductions to datastructures, time complexity and some important sorting and searching algorithms</li>
-<li>for filemagement I find it useful to sometimes use
-*  <a class="reference external" href="http://mama.indstate.edu/users/ice/tree/">tree</a>
-*  and for copying files etc. <a class="reference external" href="https://midnight-commander.org/">midnightcommander</a></li>
+<li>for filemagement I find it useful to sometimes use<ul>
+<li><a class="reference external" href="http://mama.indstate.edu/users/ice/tree/">tree</a></li>
+<li>and for copying files etc. <a class="reference external" href="https://midnight-commander.org/">midnightcommander</a></li>
+</ul>
+</li>
 <li><a class="reference external" href="https://people.eecs.berkeley.edu/~rcs/research/interactive_latency.html">Visualization of latency numbers every progammer should now</a> (why you want to be in L1 Cache, also nice is the <a class="reference external" href="https://gist.github.com/hellerbarde/2843375">huminized version with SSD random read as a “normal weekend” and L1 Cache as hearbeat</a> )</li>
 <li>Bloom filters are interesting data structures for constant time lookup in a compact way, i found this blog article instructive: <a class="reference external" href="https://prakhar.me/articles/">https://prakhar.me/articles/</a>  bloom-filters-for-dummies/</li>
 <li>For SQL design and code the <a class="reference external" href="http://ondras.zarovi.cz/sql/demo/">WWW SQL Designer tool</a> is pretty useful</li>
@@ -425,6 +431,20 @@ way to go. There is also a <a class="reference external" href="https://github.co
 <ul class="simple">
 <li><a class="reference external" href="http://docutils.sourceforge.net/docs/user/rst/quickref.html">ReStructured Text Quickreference</a>: useful when writing sphinx docs</li>
 </ul>
+</div>
+<div class="section" id="schedulers">
+<h3>Schedulers<a class="headerlink" href="#schedulers" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="sge">
+<h4>SGE<a class="headerlink" href="#sge" title="Permalink to this headline">¶</a></h4>
+<ul>
+<li><p class="first">Kill all jobs:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>squeue -u $USER | grep 5 | awk &#39;{print $1}&#39; | xargs -n 1 scancel
+</pre></div>
+</div>
+<p>replace <code class="code docutils literal"><span class="pre">5</span></code> with the number all your jobids start with.</p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 </div>
