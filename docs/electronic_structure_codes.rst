@@ -60,3 +60,19 @@ Creating input files
   that allow one to use the ASE optimizers and also initialize finite-difference phonon calculations
   with the potential of a previous (undisplaced) calculation
 
+
+AiiDA
+-----
+Though not an electronic structure code, it fits best into this category. 
+
+Get Workchain results
+``````````````````````
+
+.. code::
+
+  qb.append(WorkCalculation, filters={
+       'attributes._process_label': '<workchain_classname>',
+
+   })
+
+:code:`qb.all()` will then return a list of list, where the results can be accessed via :code:`workcalc.out.result.get_attr('<attr_name>')`

@@ -99,6 +99,10 @@
 <li class="toctree-l3"><a class="reference internal" href="#id2">Creating input files</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#aiida">AiiDA</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#get-workchain-results">Get Workchain results</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="dft.html">QM and DFT theoretical background</a></li>
@@ -246,6 +250,20 @@ from <a class="reference external" href="https://github.com/vossjo/ase-espresso"
 that allow one to use the ASE optimizers and also initialize finite-difference phonon calculations
 with the potential of a previous (undisplaced) calculation</li>
 </ul>
+</div>
+</div>
+<div class="section" id="aiida">
+<h2>AiiDA<a class="headerlink" href="#aiida" title="Permalink to this headline">¶</a></h2>
+<p>Though not an electronic structure code, it fits best into this category.</p>
+<div class="section" id="get-workchain-results">
+<h3>Get Workchain results<a class="headerlink" href="#get-workchain-results" title="Permalink to this headline">¶</a></h3>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">qb</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">WorkCalculation</span><span class="p">,</span> <span class="n">filters</span><span class="o">=</span><span class="p">{</span>
+     <span class="s1">&#39;attributes._process_label&#39;</span><span class="p">:</span> <span class="s1">&#39;&lt;workchain_classname&gt;&#39;</span><span class="p">,</span>
+
+ <span class="p">})</span>
+</pre></div>
+</div>
+<p><code class="code docutils literal"><span class="pre">qb.all()</span></code> will then return a list of list, where the results can be accessed via <code class="code docutils literal"><span class="pre">workcalc.out.result.get_attr('&lt;attr_name&gt;')</span></code></p>
 </div>
 </div>
 </div>
